@@ -1,0 +1,1 @@
+{"version":3,"sources":["header__wrapper.scss"],"names":[],"mappings":"AAAA,iBACE,QAAS,KACT,YAAa,OACb,WAAY,KACZ,IAAK","file":"header__wrapper.min.css","sourcesContent":[".header__wrapper {\n  display: flex;\n  align-items: center;\n  min-height: 65px;\n  gap: 60px;\n}\n"]}

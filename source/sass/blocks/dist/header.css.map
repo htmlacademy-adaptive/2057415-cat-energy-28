@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["header.scss"],"sourcesContent":[".header {\n  background-color: #ffffff;\n}\n"],"file":"header.css"}
+{"version":3,"names":[],"mappings":"","sources":["header.scss"],"sourcesContent":[".header {\n  background-color: #ffffff;\n}\n\n.header__logo-link {\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n  max-width: 192px;\n}\n"],"file":"header.css"}

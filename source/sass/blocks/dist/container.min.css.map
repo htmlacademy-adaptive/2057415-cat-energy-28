@@ -1,0 +1,1 @@
+{"version":3,"sources":["container.scss"],"names":[],"mappings":"AAAA,WACE,OAAQ,EAAE,KACV,MAAO","file":"container.min.css","sourcesContent":[".container {\n  margin: 0 auto;\n  width: 320px;\n}\n"]}

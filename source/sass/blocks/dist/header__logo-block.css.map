@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["header__logo-block.scss"],"sourcesContent":[".header__logo-block {\n  /*margin: 10px 0 17px 20px;*/\n  padding-right: 57px;\n}\n"],"file":"header__logo-block.css"}

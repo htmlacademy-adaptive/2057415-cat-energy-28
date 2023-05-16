@@ -1,0 +1,8 @@
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  gap: 60px;
+}
+
+/*# sourceMappingURL=header__wrapper.css.map */

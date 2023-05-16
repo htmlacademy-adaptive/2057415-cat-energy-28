@@ -1,0 +1,9 @@
+.header__toggle {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=header__toggle.css.map */

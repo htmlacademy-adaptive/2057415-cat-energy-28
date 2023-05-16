@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["programs__item-block.scss"],"sourcesContent":[".programs__item-block {\n  display: flex;\n  min-width: 180px;\n  margin-left: 22px;\n  padding-top: 30px;\n}\n"],"file":"programs__item-block.css"}

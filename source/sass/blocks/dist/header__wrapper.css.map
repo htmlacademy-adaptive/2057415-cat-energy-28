@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["header__wrapper.scss"],"sourcesContent":[".header__wrapper {\n  display: flex;\n  align-items: center;\n  min-height: 65px;\n  gap: 60px;\n}\n"],"file":"header__wrapper.css"}
