@@ -1,1 +1,0 @@
-{"version":3,"sources":["header.scss"],"names":[],"mappings":"AAAA,QACE,iBAAkB,KAGpB,mBACE,gBAAiB,KACjB,QAAS,KACT,YAAa,OACb,UAAW","file":"header.min.css","sourcesContent":[".header {\n  background-color: #ffffff;\n}\n\n.header__logo-link {\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n  max-width: 192px;\n}\n"]}

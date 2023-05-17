@@ -1,1 +1,0 @@
-{"version":3,"sources":["programs__text-block.scss"],"names":[],"mappings":"AAAA,sBACE,QAAS,KACT,QAAS,EAAE,KAAK,EAAE","file":"programs__text-block.min.css","sourcesContent":[".programs__text-block {\n  display: flex;\n  padding: 0 40px 0 20px;\n}\n"]}

@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["header__toggle.scss"],"sourcesContent":[".header__toggle {\n  border: none;\n  background-color: #ffffff;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n}\n"],"file":"header__toggle.css"}

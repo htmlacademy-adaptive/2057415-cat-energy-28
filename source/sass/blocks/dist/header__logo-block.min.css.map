@@ -1,1 +1,0 @@
-{"version":3,"sources":["header__logo-block.scss"],"names":[],"mappings":"AAAA,oBAEE,cAA4C","file":"header__logo-block.min.css","sourcesContent":[".header__logo-block {\n  /*margin: 10px 0 17px 20px;*/\n  padding-right: 57px;\n}\n"]}

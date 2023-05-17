@@ -1,0 +1,45 @@
+.footer__main-block {
+  margin: 40px 20px;
+}
+
+.footer__logo-title-block {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 40px 0;
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__link-vk {
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/vkontakte.svg);
+}
+
+.social__link-youtube {
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/youtube.svg);
+}
+
+.social__link-telegram {
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/telegram.svg);
+}
+
+.footer__copyright-block {
+  display: flex;
+  gap: 141px;
+  align-items: center;
+}
