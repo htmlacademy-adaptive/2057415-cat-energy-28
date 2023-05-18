@@ -349,4 +349,85 @@ html {
   margin: 0;
 }
 
+.footer__main-block {
+  margin: 40px 20px;
+}
+
+.footer__logo-title-block {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 40px 0;
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__link-vk {
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/vkontakte.svg);
+}
+
+.social__link-youtube {
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/youtube.svg);
+}
+
+.social__link-telegram {
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/telegram.svg);
+}
+
+.footer__copyright-block {
+  display: flex;
+  gap: 141px;
+  align-items: center;
+}
+
+.catalog-main__container {
+  margin: 0 20px 25px 20px;
+}
+
+.catalog-main__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #f02222;
+}
+
+.catalog-main {
+  background-color: #ff0000;
+}
+
+.card__data {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 36px;
+  color: #ff0000;
+}
+
+.add-offers__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
 /*# sourceMappingURL=style.css.map */
