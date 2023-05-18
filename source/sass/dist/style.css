@@ -408,10 +408,6 @@ html {
   color: #f02222;
 }
 
-.catalog-main {
-  background-color: #ff0000;
-}
-
 .card__data {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -428,6 +424,11 @@ html {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+}
+
+.comments__title {
+  color: #ff0000;
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
