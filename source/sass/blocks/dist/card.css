@@ -1,0 +1,85 @@
+.card__image-wrapper {
+  min-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__block {
+  display: flex;
+  min-height: 112px;
+  padding: 11px 0 13px 0;
+}
+
+.card__link-block {
+  margin-bottom: 18px;
+  width: max-content;
+}
+
+.card__title-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+}
+
+.card__data {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
+
+.card__table {
+  min-width: 140px;
+}
+
+.card__table-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button-block {
+  padding-bottom: 14px;
+}
+
+.card__button {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.card__more-block {
+  padding-bottom: 0;
+}
+
+.card__more-button {
+  color: #444444;
+  background: #f2f2f2;
+}
+
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,33 @@
+.header {
+  background-color: #ffffff;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  max-width: 192px;
+}
+
+.header__logo-block {
+  padding-right: 57px;
+}
+
+.header__logo-wrapper {
+  margin-left: 20px;
+}
+
+.header__toggle {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  gap: 60px;
+}

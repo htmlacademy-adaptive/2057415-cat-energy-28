@@ -1,0 +1,33 @@
+.additionally {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.additionally__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.additionally__label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.additionally__list-block {
+  margin-top: 34px;
+}
+
+.additionally__item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 13px;
+}
+
+/*# sourceMappingURL=additionally.css.map */

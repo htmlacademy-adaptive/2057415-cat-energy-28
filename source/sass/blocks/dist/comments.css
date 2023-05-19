@@ -1,0 +1,28 @@
+.comments {
+  margin-bottom: 22px;
+}
+
+.comments__title-block {
+  margin: 23px 0 37px 0;
+}
+
+.comments__text-block {
+  width: 100%;
+  min-height: 150px;
+  padding: 9px 12px 9px 15px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.comments__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #e7e7e7;
+}
+
+/*# sourceMappingURL=comments.css.map */

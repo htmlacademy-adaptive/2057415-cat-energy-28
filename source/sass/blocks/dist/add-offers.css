@@ -1,0 +1,85 @@
+.add-offers__block {
+  margin: 0 20px 0 20px;
+}
+
+.add-offers__block-title {
+  margin-bottom: 36px;
+}
+
+.add-offers__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+}
+
+.add-offers__item {
+  min-height: 98px;
+  margin-bottom: 31px;
+}
+
+.add-offers__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.add-offers__product-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  margin: 0;
+  padding-bottom: 13px;
+}
+
+.add-offers__product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-offers__item-sum,
+.add-offers__item-price {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.add-offers__product-list {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.add-offers__present {
+  width: 280px;
+  height: 290px;
+  background-size: 280px 290px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag.png");
+}
+
+.add-offers__present-title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 187px;
+}
+
+/*# sourceMappingURL=add-offers.css.map */
