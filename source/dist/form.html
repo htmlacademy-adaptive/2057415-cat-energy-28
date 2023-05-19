@@ -5,6 +5,7 @@
     <link rel="icon" href="imag/32.png">
 		<link rel="icon" href="32.ico">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header container">
@@ -44,21 +45,24 @@
     </header>
     <section class="main-form">
       <div class="main-form__wrapper container">
-        <h1 class="main-form__title">Подбор программы</h1>
-        <b class="main-form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</b>
-        <form class="form">
-          <div class="form__data">
-            <div class="form__data-block">
-              <div class="form__name">
-                <label class="form__label" for="name">Имя:*</label>
-                <input class="form__input" type="text" id="name" name="name" aria-label="Введите имя вашего кота" placeholder="Барсик" required>
-              </div>
+        <div class="main-form__block">
+          <div class="main-form__title-block">
+            <h1 class="main-form__title main-form__title-space">Подбор программы</h1>
+            <b class="main-form__intro main-form__intro-block">Заполните анкету, и мы подберем программу питания для вашего кота</b>
+          </div>
+          <form class="form">
+            <div class="form__data">
+              <div class="form__data-block">
+                <div class="form__name">
+                  <label class="form__label" for="name">Имя:*</label>
+                  <input class="form__input" type="text" id="name" name="name" aria-label="Введите имя вашего кота" placeholder="Барсик" required>
+                </div>
               <div class="form__weight">
-                <label class="form__label" for="weight">Вес (кг):*</label>
+                <label class="form__label form__weight-block" for="weight">Вес (кг):*</label>
                 <input class="form__input" type="number" id="weight" name="weight" aria-label="Введите вес вашего кота" placeholder="7" required>
               </div>
               <div class="form__age">
-                <label class="form__label" for="age">Возраст (лет):</label>
+                <label class="form__label form__age-block" for="age">Возраст (лет):</label>
                 <input class="form__input" type="number" id="age" name="age" aria-label="Введите возраст вашего кота" placeholder="7">
               </div>
             </div>
@@ -80,54 +84,67 @@
             </fieldset>
           </div>
           <div class="contacts">
-            <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-              <div class="contacts__input-wrapper">
-                <label class="contacts__label" for="email">E-mail:*</label>
-                <input class="contacts__input" type="email" id="email" name="email" aria-label="Введите ваш электронный адрес" placeholder="кuklachev@gmail.com" required>
+            <div class="contacts__title-block">
+              <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+            </div>
+              <div class="contacts__input-wrapper contacts__form-block">
+                <label class="contacts__label form__label" for="email">E-mail:*</label>
+                <input class="contacts__input form__input" type="email" id="email" name="email" aria-label="Введите ваш электронный адрес" placeholder="кuklachev@gmail.com" required>
               </div>
-              <div class="contacts__phone">
-                <label class="contacts__phone__item" for="phone">Телефон:*</label>
-                <input class="contacts__phone__form" type="phone" id="phone" name="phone" aria-label="Введите ваш номер телефона" placeholder="8 (960) 900-60-90" required>
+              <div class="contacts__phone contacts__form-block">
+                <label class="contacts__phone__item form__label" for="phone">Телефон:*</label>
+                <input class="contacts__phone__form form__input" type="phone" id="phone" name="phone" aria-label="Введите ваш номер телефона" placeholder="8 (960) 900-60-90" required>
               </div>
           </div>
           <div class="comments">
-            <h2 class="comments__title">Комментарий</h2>
-            <textarea class="comments__text" type="text" id="textarea" name="textarea" aria-label="Напишите о повадках вашего кота" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="comments__title-block">
+              <h2 class="comments__title contacts__title">Комментарий</h2>
+            </div>
+            <textarea class="comments__text comments__text-block" type="text" id="textarea" name="textarea" aria-label="Напишите о повадках вашего кота" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <fieldset class="additionally">
-            <legend class="additionally__title">Дополнительно</h2>
-              <ul class="additionally__list">
+            <legend class="additionally__title contacts__title">Дополнительно</h2>
+              <ul class="additionally__list additionally__list-block">
                 <li class="additionally__item">
                   <input class="additionally__checkbox" type="checkbox" id="sweetener" value="sweetener" name="additionally" aria-label="Сахарозаменитель." checked>
                   <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="additionally__item">
                   <input class="additionally__item__field" type="checkbox" id="water" value="water" name="additionally" aria-label="Питьевая вода.">
-                  <label class="additionally__item__title" for="water">Питьевая вода</label>
+                  <label class="additionally__item__title additionally__label" for="water">Питьевая вода</label>
                 </li>
                 <li class="additionally__item">
                   <input class="additionally__item__field" type="checkbox" id="milk" value="milk" name="additionally" aria-label="Молоко.">
-                  <label class="additionally__item__title" for="milk">Молоко</label>
+                  <label class="additionally__item__title additionally__label" for="milk">Молоко</label>
                 </li>
                 <li class="additionally__item">
                   <input class="additionally__item__field" type="checkbox" id="vitamins" value="vitamins" name="additionally" aria-label="Витамины.">
-                  <label class="additionally__item__title" for="vitamins">Витамины</label>
+                  <label class="additionally__item__title additionally__label" for="vitamins">Витамины</label>
                 </li>
               </ul>
-              <button class="button main-form__button" type="submit">Отправить заявку</button>
+              <div class="main-form__button-block">
+                <button class="button main-form__button card__button" type="submit">Отправить заявку</button>
+              </div>
               <span class="main-form__footnote">* - Обязательные поля</span>
           </fieldset>
         </form>
+        </div>
       </div>
     </section>
     <section class="cooperation">
       <div class="cooperation__wrapper container">
-        <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="cooperation__addres">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
-        <div class="cooperation__map">
-
+        <div class="cooperation__wrapper-block">
+          <div class="cooperation__title-block">
+            <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+          </div>
+          <div class="cooperation__addres-block">
+            <address class="cooperation__addres">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
+        </div>
+        <div class="cooperation__map-block">
+          <img class="cooperation__map" src="img/map.png" width="320" height="362" alt="Карта">
         </div>
       </div>
     </section>
