@@ -1,0 +1,23 @@
+.social__link {
+  display: flex;
+}
+
+.social__link-vk {
+  width: 28px;
+  height: 22px;
+  background-image: url("../img/vkontakte.svg");
+}
+
+.social__link-youtube {
+  width: 28px;
+  height: 22px;
+  background-image: url("../img/youtube.svg");
+}
+
+.social__link-telegram {
+  width: 28px;
+  height: 22px;
+  background-image: url("../img/telegram.svg");
+}
+
+/*# sourceMappingURL=social.css.map */
