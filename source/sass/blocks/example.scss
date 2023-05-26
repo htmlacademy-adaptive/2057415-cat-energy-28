@@ -1,47 +1,120 @@
-.example__block {
-  padding: 25px 20px 40px 20px;
+.example {
+  @media (min-width: 769px) {
+    position: relative;
+    padding: 40px 0 100px 0;
+    border-top: 1px solid #e6e6e6;
+    background-color: transparent;
+  }
+
+  @media (min-width: 1317px) {
+    position: relative;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+
   background-color: #eaeaea;
 }
 
-.example__block-title {
-  display: flex;
-  margin-bottom: 40px;
+.example__wrapper {
+  @media (min-width: 1317px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 598px;
+  }
 }
 
 .example__title {
+  @media (min-width: 769px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: 1317px) {
+    margin-bottom: 76px;
+    width: 436px;
+  }
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: #000000;
-  margin: 0;
-}
-
-.example__block-text {
-  margin-bottom: 20px;
+  margin: 0 0 40px 0;
 }
 
 .example__text {
+  @media (min-width: 769px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: 1317px) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
-.example__data-information {
+.example__stats {
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1317px) {
+    flex-wrap: wrap;
+    width: 436px;
+  }
+}
+
+.example__stats-list {
   display: flex;
   justify-content: center;
-  gap: 32px;
-  margin: 0 auto;
-  padding-bottom: 20px;
+  align-items: center;
 }
 
-.example__targets {
+.example__stats-item {
+  @media (min-width: 769px) {
+    width: 162px;
+  }
+
+  @media (min-width: 1317px) {
+    margin-bottom: 55px;
+  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 124px;
+  padding: 14px 0 14px 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__stats-item--left {
+  margin-right: 16px;
+}
+
+.example__stats-item--right {
+  margin-left: 16px;
+}
+
+.example__value {
+  @media (min-width: 769px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -49,22 +122,53 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
 }
 
-.example__targets-text {
+.example__value-text {
+  @media (min-width: 769px) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: 130px;
+    padding: 0;
+    top: 57px;
+    left: 17px;
+  }
+
+  @media (min-width: 1317px) {
+    background-color: #eaeaea;
+  }
+
+  position: absolute;
+  top: 44px;
+  left: 16px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   align-items: center;
+  width: 60px;
+  background-color: #eaeaea;
+  padding: 0 17px 0 17px;
 }
 
 .example__total {
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 1317px) {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+  }
+
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -72,5 +176,34 @@
   line-height: 20px;
   text-align: center;
   color: #000000;
-  margin: 0;
+  margin: 32px 0 20px 0;
+}
+
+.example__sample-block {
+  @media (min-width: 769px) {
+    margin-top: 99px;
+  }
+}
+
+.example__sample {
+  width: 100%;
+}
+
+.example__inner {
+  @media (min-width: 769px) {
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 60%, rgba(255, 255, 255, 1) 54%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 462px;
+  }
+
+  @media (min-width: 1317px) {
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 100%, rgba(255, 255, 255, 1) 54%);
+    bottom: 0;
+    left: 0;
+    height: 463px;
+  }
 }

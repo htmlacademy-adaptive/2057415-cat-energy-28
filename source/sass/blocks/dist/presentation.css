@@ -3,9 +3,16 @@
   background-repeat: no-repeat;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   background-size: 320px 302px;
-  width: 320px;
+  width: auto;
+  /*width: 320px;*/
   height: 302px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .presentation__block {
+    order: 2;
+  }
 }
 
 .presentation__block-title {
@@ -30,6 +37,13 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .presentation__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=presentation.css.map */

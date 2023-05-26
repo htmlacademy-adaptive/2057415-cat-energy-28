@@ -1,23 +1,22 @@
-.social__link {
-  display: flex;
-}
-
-.social__link-vk {
+.social__link--vk {
   width: 28px;
   height: 22px;
   background-image: url("../img/vkontakte.svg");
+  display: block;
 }
 
-.social__link-youtube {
+.social__link--youtube {
   width: 28px;
   height: 22px;
   background-image: url("../img/youtube.svg");
+  display: block;
 }
 
-.social__link-telegram {
+.social__link--telegram {
   width: 28px;
   height: 22px;
   background-image: url("../img/telegram.svg");
+  display: block;
 }
 
 /*# sourceMappingURL=social.css.map */

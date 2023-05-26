@@ -1,0 +1,132 @@
+.instruction {
+  @media (min-width: 769px) {
+    padding: 45px 0 90px 0;
+  }
+
+  @media (min-width: 1317px) {
+    padding: 71px 0 69px 0;
+  }
+  padding: 40px 0 20px 0;
+}
+
+.instruction__title {
+  @media (min-width: 769px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 70px;
+  }
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0 0 40px 0;
+}
+
+.instruction__list {
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instruction__item {
+  @media (min-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 300px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: 1317px) {
+    max-width: 240px;
+    margin: 0;
+    padding-bottom: 83px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instruction__item:nth-child(n+3) {
+  @media (min-width: 769px) {
+    margin: 0;
+  }
+}
+
+.instruction__item--one {
+  @media (min-width: 769px) {
+    background-image: url("../img/icon_one.svg");
+    background-size: 112px 230px;
+    background-position: 120px 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item--two {
+  @media (min-width: 769px) {
+    background-image: url("../img/icon_two.svg");
+    background-size: 115px 230px;
+    background-position: 120px 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item--three {
+  @media (min-width: 769px) {
+    background-image: url("../img/icon_three.svg");
+    background-size: 115px 230px;
+    background-position: 120px 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item--four {
+  @media (min-width: 769px) {
+    background-image: url("../img/icon_four.svg");
+    background-size: 115px 230px;
+    background-position: 120px 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.instruction__item-text {
+  @media (min-width: 769px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+  }
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  width: calc(100% - 85px);
+}
+
+.instruction__image-block {
+  @media (min-width: 769px) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
