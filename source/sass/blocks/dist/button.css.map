@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["button.scss"],"sourcesContent":[".button {\n  display: flex;\n  align-items: flex-end;\n}\n\n"],"file":"button.css"}
+{"version":3,"names":[],"mappings":"","sources":["button.scss"],"sourcesContent":[".button {\n  display: flex;\n  align-items: flex-end;\n}\n"],"file":"button.css"}
