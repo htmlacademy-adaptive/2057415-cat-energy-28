@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["popover.scss"],"sourcesContent":[".popover-run {\n  padding-top: 5px;\n}\n"],"file":"popover.css"}
+{"version":3,"names":[],"mappings":"","sources":["popover.scss"],"sourcesContent":[".popover--open {\n  @media (max-width: 769px) {\n    display: block;\n  }\n}\n\n.popover--close {\n  @media (max-width: 769px) {\n    display: none;\n  }\n}\n"],"file":"popover.css"}
