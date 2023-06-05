@@ -1,13 +1,22 @@
 .form__main {
   @media (min-width: 1317px) {
-    padding: 0 65px 82px 40px;
+    padding: 0 0 82px 0;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 769px) and (max-width: 1317px) {
     padding: 0 35px 72px 40px;
   }
 
   padding-bottom: 32px;
+}
+
+.form__wrapper {
+  @media (min-width: 1317px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
 
 .form__weight-block {
@@ -19,13 +28,20 @@
 }
 
 .form__block {
-  @media (min-width: 769px) {
+  @media (min-width: 769px) and (max-width: 1317px) {
     padding: 0 0 72px 0;
   }
-  padding: 0 0 23px 0;
+
+  @media (max-width: 769px) {
+    padding: 0 0 23px 0;
+  }
 }
 
 .form__block--program {
+  @media (min-width: 1317px) {
+    width: 45%;
+  }
+
   @media (min-width: 769px) {
     border: 1px solid #e7e7e7;
     padding: 25px 27px 25px 27px;
@@ -56,6 +72,10 @@
 }
 
 .form__label {
+  @media (min-width: 1317px) {
+    flex-shrink: 0;
+  }
+
   @media (min-width: 769px) {
     font-size: 20px;
     line-height: 30px;
@@ -91,7 +111,11 @@
 }
 
 .form__title-block {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    padding: 0 0 76px 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     padding: 71px 0 65px 0;
   }
 
@@ -116,6 +140,10 @@
 }
 
 .form__inner-block {
+  @media (min-width: 1317px) {
+    width: 45%;
+  }
+
   display: flex;
   align-items: center;
 }
@@ -167,6 +195,10 @@
 }
 
 .form__textarea-block {
+  @media (min-width: 1317px) {
+    margin: 0 0 76px 0;
+  }
+
   margin: 0 0 37px 0;
 }
 
@@ -208,6 +240,10 @@
 }
 
 .form__button-block {
+  @media (min-width: 1317px) {
+    width: 100%;
+  }
+
   @media (min-width: 769px) {
     display: flex;
     align-items: center;
@@ -219,7 +255,12 @@
 }
 
 .form__button {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    width: 46%;
+    margin: 0 84px 0 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     width: 44%;
     margin: 0 64px 0 0;
     font-size: 20px;
@@ -252,7 +293,39 @@
 }
 
 .form__block--add {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    width: 100%;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     padding-bottom: 54px;
+  }
+}
+
+.form__block--user {
+  @media (min-width: 1317px) {
+    width: 45%;
+  }
+}
+
+.form__block--contacts {
+  @media (min-width: 1317px) {
+    width: 100%;
+    margin: 69px 0 67px 0;
+  }
+}
+
+.form__inner {
+  @media (min-width: 1317px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__block--textarea {
+  @media (min-width: 1317px) {
+    width: 100%;
+    padding: 0 0 67px 0;
   }
 }

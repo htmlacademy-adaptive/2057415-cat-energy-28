@@ -4,13 +4,22 @@
 
 @media (min-width: 1317px) {
   .form__main {
-    padding: 0 65px 82px 40px;
+    padding: 0 0 82px 0;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1317px) {
   .form__main {
     padding: 0 35px 72px 40px;
+  }
+}
+
+@media (min-width: 1317px) {
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
   }
 }
 
@@ -22,13 +31,15 @@
   min-width: 94px;
 }
 
-.form__block {
-  padding: 0 0 23px 0;
-}
-
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1317px) {
   .form__block {
     padding: 0 0 72px 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .form__block {
+    padding: 0 0 23px 0;
   }
 }
 
@@ -37,6 +48,12 @@
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
   margin: 0 -20px 0 -20px;
+}
+
+@media (min-width: 1317px) {
+  .form__block--program {
+    width: 45%;
+  }
 }
 
 @media (min-width: 769px) {
@@ -76,6 +93,12 @@
   color: #444444;
 }
 
+@media (min-width: 1317px) {
+  .form__label {
+    flex-shrink: 0;
+  }
+}
+
 @media (min-width: 769px) {
   .form__label {
     font-size: 20px;
@@ -109,7 +132,13 @@
   padding: 26px 0 35px 0;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1317px) {
+  .form__title-block {
+    padding: 0 0 76px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
   .form__title-block {
     padding: 71px 0 65px 0;
   }
@@ -137,6 +166,12 @@
 .form__inner-block {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1317px) {
+  .form__inner-block {
+    width: 45%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1317px) {
@@ -195,6 +230,12 @@
   margin: 0 0 37px 0;
 }
 
+@media (min-width: 1317px) {
+  .form__textarea-block {
+    margin: 0 0 76px 0;
+  }
+}
+
 .form__textarea-title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -241,6 +282,12 @@
   text-align: center;
 }
 
+@media (min-width: 1317px) {
+  .form__button-block {
+    width: 100%;
+  }
+}
+
 @media (min-width: 769px) {
   .form__button-block {
     display: flex;
@@ -266,7 +313,14 @@
   margin-bottom: 21px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1317px) {
+  .form__button {
+    width: 46%;
+    margin: 0 84px 0 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
   .form__button {
     width: 44%;
     margin: 0 64px 0 0;
@@ -284,9 +338,43 @@
   color: #000000;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1317px) {
+  .form__block--add {
+    width: 100%;
+    padding-bottom: 61px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
   .form__block--add {
     padding-bottom: 54px;
+  }
+}
+
+@media (min-width: 1317px) {
+  .form__block--user {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1317px) {
+  .form__block--contacts {
+    width: 100%;
+    margin: 69px 0 67px 0;
+  }
+}
+
+@media (min-width: 1317px) {
+  .form__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1317px) {
+  .form__block--textarea {
+    width: 100%;
+    padding: 0 0 67px 0;
   }
 }
 

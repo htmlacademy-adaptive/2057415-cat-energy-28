@@ -55,7 +55,11 @@
 }
 
 .additionally__item {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    width: 25%;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     width: 50%;
     margin-bottom: 32px;
   }

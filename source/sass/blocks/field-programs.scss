@@ -26,5 +26,9 @@
 }
 
 .field-programs__item:not(:last-child) {
+  @media (min-width: 1317px) {
+    margin-bottom: 16px;
+  }
+
   margin-bottom: 13px;
 }

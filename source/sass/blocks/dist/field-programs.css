@@ -31,4 +31,10 @@
   margin-bottom: 13px;
 }
 
+@media (min-width: 1317px) {
+  .field-programs__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
 /*# sourceMappingURL=field-programs.css.map */
