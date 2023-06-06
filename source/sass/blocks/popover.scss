@@ -1,3 +1,11 @@
-.popover-run {
-  padding-top: 5px;
+.popover--open {
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
+
+.popover--close {
+  @media (max-width: 769px) {
+    display: none;
+  }
 }

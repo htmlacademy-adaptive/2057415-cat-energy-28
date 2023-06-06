@@ -11,6 +11,11 @@
 }
 
 .field-programs__label {
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -20,6 +25,10 @@
   color: #222222;
 }
 
-.field-programs__item {
+.field-programs__item:not(:last-child) {
+  @media (min-width: 1317px) {
+    margin-bottom: 16px;
+  }
+
   margin-bottom: 13px;
 }

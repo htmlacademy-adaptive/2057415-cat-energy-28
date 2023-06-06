@@ -20,8 +20,21 @@
   color: #222222;
 }
 
-.field-programs__item {
+@media (min-width: 769px) {
+  .field-programs__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.field-programs__item:not(:last-child) {
   margin-bottom: 13px;
+}
+
+@media (min-width: 1317px) {
+  .field-programs__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 /*# sourceMappingURL=field-programs.css.map */

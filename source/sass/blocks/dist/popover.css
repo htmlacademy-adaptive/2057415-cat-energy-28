@@ -1,5 +1,13 @@
-.popover-run {
-  padding-top: 5px;
+@media (max-width: 769px) {
+  .popover--open {
+    display: block;
+  }
+}
+
+@media (max-width: 769px) {
+  .popover--close {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=popover.css.map */

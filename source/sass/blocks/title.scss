@@ -1,0 +1,37 @@
+.title-block {
+  @media (min-width: 1317px) {
+    padding: 74px 0 84px 0;
+  }
+
+  @media (min-width: 769px) {
+    padding: 64px 0 82px 0;
+  }
+
+  @media (max-width: 769px) {
+    padding: 27px 20px 41px 20px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 -20px 0 -20px;
+  }
+}
+
+.title-block__wrapper {
+  @media (min-width: 769px) {
+    border: none;
+  }
+}
+
+.title-block__title {
+  @media (min-width: 769px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+}

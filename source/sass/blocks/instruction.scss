@@ -36,6 +36,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  counter-reset: licounter;
 }
 
 .instruction__item {
@@ -57,47 +58,43 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
+  counter-increment: licounter;
+}
+
+.instruction__item::before {
+  @media (min-width: 1317px) {
+    position: absolute;
+    top: -39px;
+    right: 0;
+    content: counter(licounter) "";
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
+    position: absolute;
+    top: -39px;
+    right: 61px;
+    content: counter(licounter) "";
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
 }
 
 .instruction__item:nth-child(n+3) {
   @media (min-width: 769px) {
     margin: 0;
-  }
-}
-
-.instruction__item--one {
-  @media (min-width: 769px) {
-    background-image: url("../img/icon_one.svg");
-    background-size: 112px 230px;
-    background-position: 120px 0;
-    background-repeat: no-repeat;
-  }
-}
-
-.instruction__item--two {
-  @media (min-width: 769px) {
-    background-image: url("../img/icon_two.svg");
-    background-size: 115px 230px;
-    background-position: 120px 0;
-    background-repeat: no-repeat;
-  }
-}
-
-.instruction__item--three {
-  @media (min-width: 769px) {
-    background-image: url("../img/icon_three.svg");
-    background-size: 115px 230px;
-    background-position: 120px 0;
-    background-repeat: no-repeat;
-  }
-}
-
-.instruction__item--four {
-  @media (min-width: 769px) {
-    background-image: url("../img/icon_four.svg");
-    background-size: 115px 230px;
-    background-position: 120px 0;
-    background-repeat: no-repeat;
   }
 }
 
