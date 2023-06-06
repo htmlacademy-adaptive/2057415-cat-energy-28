@@ -130,6 +130,7 @@
 
 .form__title-block {
   padding: 26px 0 35px 0;
+  position: relative;
 }
 
 @media (min-width: 1317px) {
@@ -144,6 +145,33 @@
   }
 }
 
+.form__title-block::before {
+  position: absolute;
+  content: "";
+  top: 42px;
+  right: -20px;
+  height: 2px;
+  width: 100%;
+  background-color: #68b738;
+  z-index: -1;
+}
+
+@media (min-width: 1317px) {
+  .form__title-block::before {
+    top: 19px;
+    right: -110px;
+    width: 150%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
+  .form__title-block::before {
+    top: 90px;
+    right: -65px;
+    width: 150%;
+  }
+}
+
 .form__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -153,13 +181,27 @@
   color: #000000;
   max-width: 187px;
   margin: 0;
+  background-color: #ffffff;
+  padding-right: 14px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1317px) {
   .form__title {
     font-size: 36px;
     line-height: 36px;
-    max-width: 90%;
+    min-width: 517px;
+    margin-left: -39px;
+    padding: 0 40px 0 39px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+    min-width: 517px;
+    margin-left: -39px;
+    padding: 0 42px 0 39px;
   }
 }
 
@@ -228,11 +270,39 @@
 
 .form__textarea-block {
   margin: 0 0 37px 0;
+  position: relative;
 }
 
 @media (min-width: 1317px) {
   .form__textarea-block {
     margin: 0 0 76px 0;
+  }
+}
+
+.form__textarea-block::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -20px;
+  height: 2px;
+  background-color: #68b738;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 1317px) {
+  .form__textarea-block::before {
+    top: 23px;
+    right: -110px;
+    width: 150%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
+  .form__textarea-block::before {
+    top: 23px;
+    right: -65px;
+    width: 150%;
   }
 }
 
@@ -244,12 +314,18 @@
   line-height: 26px;
   color: #000000;
   margin: 0;
+  background-color: #ffffff;
+  width: 121px;
+  padding: 0 22px 0 0;
 }
 
 @media (min-width: 769px) {
   .form__textarea-title {
     font-size: 36px;
     line-height: 36px;
+    min-width: 182px;
+    padding: 0 38px 0 39px;
+    margin-left: -39px;
   }
 }
 
