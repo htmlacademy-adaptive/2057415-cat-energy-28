@@ -1,1 +1,0 @@
-{"version":3,"sources":["block-button.scss"],"names":[],"mappings":"AAAA,QACE,MAAO,MACP,OAAQ,MACR,QAAS,KACT,YAAa","file":"block-button.min.css","sourcesContent":[".button {\n  width: 320px;\n  height: 178px;\n  display: flex;\n  align-items: flex-end;\n}\n\n"]}
