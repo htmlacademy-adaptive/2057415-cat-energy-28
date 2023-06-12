@@ -156,6 +156,15 @@
   display: flex;
   justify-content: center;
   padding: 12px 0 12px 0;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .head-section__picture {

@@ -127,3 +127,58 @@
   justify-content: center;
   align-items: center;
 }
+
+.instruction__image--icon,
+.instruction__image-block--watch,
+.instruction__image-block--fork,
+.instruction__image-block--water {
+  position: relative;
+}
+
+.instruction__image--icon::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon__leaf--index.svg");
+  width: 30px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+
+.instruction__image-block--watch::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon__watch--index.svg");
+  width: 30px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+
+.instruction__image-block--fork::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon__fork--index.svg");
+  width: 30px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+
+.instruction__image-block--water::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon__water--index.svg");
+  width: 30px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
