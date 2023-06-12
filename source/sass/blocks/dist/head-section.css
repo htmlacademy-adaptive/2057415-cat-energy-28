@@ -181,6 +181,14 @@
   }
 }
 
+.head-section__button:hover, .head-section__button:focus {
+  background-color: #5eaa2f;
+}
+
+.head-section__button:hover:active, .head-section__button:focus:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: 1317px) {
   .head-section__picture {
     order: 4;

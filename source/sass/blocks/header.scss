@@ -11,6 +11,19 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    .header__logo {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    .header__logo {
+      opacity: 0.6;
+    }
+  }
 }
 
 .header__logo-wrapper {
@@ -18,6 +31,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 0 16px 0;
+}
+
+.header__logo {
+  @media (min-width: 1317px) {
+    width: 202px;
+    height: 59px;
+  }
+
+  @media (min-width: 769px) {
+    width: 174px;
+    height: 51px;
+  }
 }
 
 .header__toggle-icon--close {
@@ -192,15 +217,45 @@
   }
 }
 
+.header__popover-link,
+.header__popover-item {
+  position: relative;
+}
+
+.header__popover-item--active .header__popover-link::after {
+  @media (min-width: 1317px) {
+    background-color: #ffffff;
+  }
+
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #38b738;
+  bottom: -8px;
+  left: 0;
+}
+
+.header__popover--active .header__popover-link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #38b738;
+  bottom: -8px;
+  left: 0;
+}
+
 .header__popover-link {
   @media (min-width: 1317px) {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
     color: #ffffff;
+    text-decoration: none;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -216,6 +271,15 @@
     line-height: 20px;
     text-decoration: none;
     color: #000000;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

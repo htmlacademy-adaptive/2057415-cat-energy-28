@@ -301,6 +301,14 @@
   }
 }
 
+.add-offers__button:hover, .add-offers__button:focus {
+  background-color: #5eaa2f;
+}
+
+.add-offers__button:hover:active, .add-offers__button:focus:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: 1317px) {
   .add-offers__inner {
     display: flex;

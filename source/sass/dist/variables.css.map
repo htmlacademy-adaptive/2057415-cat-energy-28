@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["variables.scss"],"sourcesContent":["//viewport\n$tablet-width: 768px;\n$desktop-width: 1200px;\n"],"file":"variables.css"}

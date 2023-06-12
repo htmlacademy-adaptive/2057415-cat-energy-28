@@ -159,11 +159,83 @@
   }
 }
 
+@media (min-width: 1317px) {
+  .programs__images--picture::after {
+    position: relative;
+    content: "";
+    background-image: url("../img/cat-sitting--desktop.svg");
+    width: 100px;
+    height: 106px;
+    display: block;
+    top: -5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
+  .programs__images--picture::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cat-sitting--tablet.svg");
+    width: 200px;
+    height: 211px;
+    display: block;
+    left: -20px;
+  }
+}
+
+@media (max-width: 769px) {
+  .programs__images--picture::after {
+    content: "";
+    background-image: url("../img/cat-sitting--mobile.svg");
+    width: 50px;
+    height: 53px;
+    display: block;
+  }
+}
+
+@media (min-width: 1317px) {
+  .programs__images-block::after {
+    position: relative;
+    content: "";
+    background-image: url("../img/cat-is-standing--desktop.svg");
+    width: 134px;
+    height: 100px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1317px) {
+  .programs__images-block::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cat-is-standing--tablet.svg");
+    width: 268px;
+    height: 200px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 769px) {
+  .programs__images-block::after {
+    content: "";
+    background-image: url("../img/cat-is-standing--mobile.svg");
+    width: 67px;
+    height: 50px;
+    display: block;
+  }
+}
+
 .programs__item-link {
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.programs__item-link:hover {
+  transform: translateX(0);
 }
 
 .programs__link-title {
@@ -172,18 +244,19 @@
   font-style: normal;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
   padding-right: 15px;
-  width: auto;
+  width: 100%;
 }
 
 @media (min-width: 769px) {
   .programs__link-title {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 25px;
   }
 }
 
@@ -217,6 +290,14 @@
   .programs__images-icon--desktop {
     display: block;
   }
+}
+
+.programs__link-block--icon::after {
+  content: "";
+  background-image: url("../img/icon__folow--index.svg");
+  width: 34px;
+  height: 12px;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=programs.css.map */

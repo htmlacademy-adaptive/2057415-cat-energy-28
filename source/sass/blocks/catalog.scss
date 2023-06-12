@@ -200,6 +200,15 @@
   color: #ffffff;
   background-color: #68b738;
   padding: 10px 0 10px 0;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .catalog__card-button--grey {
@@ -209,6 +218,15 @@
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .catalog__more-top {

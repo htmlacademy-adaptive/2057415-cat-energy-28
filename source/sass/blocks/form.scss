@@ -39,10 +39,13 @@
 
 .form__block--program {
   @media (min-width: 1317px) {
-    width: 45%;
+    width: 42.2%;
+    padding: 24px 27px 18px 27px;
+    border: 1px solid #e7e7e7;
+    margin: 0;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 769px) and (max-width: 1317px) {
     border: 1px solid #e7e7e7;
     padding: 25px 27px 25px 27px;
     margin: 0;
@@ -61,7 +64,7 @@
 
 .form__user:not(:last-child) {
   @media (min-width: 769px) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   margin-bottom: 14px;
@@ -108,7 +111,23 @@
   padding: 14px 20px 13px 20px;
   border: 1px solid #e7e7e7;
   margin: 0 0 0 13px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
+
+/* stylelint-disable */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* stylelint-enable */
 
 .form__title-block {
   @media (min-width: 1317px) {
@@ -228,6 +247,51 @@
   width: 100%;
   margin: 0 0 0 10px;
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+}
+
+.form__inner--icon,
+.form__inner--image {
+  position: relative;
+}
+
+.form__inner--image::after {
+  @media (min-width: 769px) {
+    top: 22px;
+    right: 18px;
+  }
+
+  position: absolute;
+  background-image: url("../img/form/form-email@1.svg");
+  width: 20px;
+  height: 20px;
+  content: "";
+  top: 16px;
+  right: 15px;
+  background-repeat: no-repeat;
+}
+
+.form__inner--icon::after {
+  @media (min-width: 769px) {
+    top: 22px;
+    right: 18px;
+  }
+
+  position: absolute;
+  background-image: url("../img/form/form-phone@1.svg");
+  width: 20px;
+  height: 20px;
+  content: "";
+  top: 16px;
+  right: 15px;
+  background-repeat: no-repeat;
 }
 
 .form__textarea-block {
@@ -303,6 +367,14 @@
   resize: none;
   padding: 9px 12px 9px 15px;
   box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 .form__button-block {
@@ -347,6 +419,15 @@
   justify-content: center;
   padding: 7px 44px 7px 44px;
   margin-bottom: 21px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .form__button-footnote {
@@ -371,7 +452,7 @@
 
 .form__block--user {
   @media (min-width: 1317px) {
-    width: 45%;
+    width: 46.6%;
   }
 }
 

@@ -52,11 +52,14 @@
 
 @media (min-width: 1317px) {
   .form__block--program {
-    width: 45%;
+    width: 42.2%;
+    padding: 24px 27px 18px 27px;
+    border: 1px solid #e7e7e7;
+    margin: 0;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1317px) {
   .form__block--program {
     border: 1px solid #e7e7e7;
     padding: 25px 27px 25px 27px;
@@ -75,7 +78,7 @@
 
 @media (min-width: 769px) {
   .form__user:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -128,6 +131,22 @@
   }
 }
 
+.form__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__input:focus {
+  outline: 2px solid #444444;
+}
+
+/* stylelint-disable */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* stylelint-enable */
 .form__title-block {
   padding: 26px 0 35px 0;
   position: relative;
@@ -268,6 +287,55 @@
   }
 }
 
+.form__inner-input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__inner-input:focus {
+  outline: 2px solid #444444;
+}
+
+.form__inner--icon,
+.form__inner--image {
+  position: relative;
+}
+
+.form__inner--image::after {
+  position: absolute;
+  background-image: url("../img/form/form-email@1.svg");
+  width: 20px;
+  height: 20px;
+  content: "";
+  top: 16px;
+  right: 15px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 769px) {
+  .form__inner--image::after {
+    top: 22px;
+    right: 18px;
+  }
+}
+
+.form__inner--icon::after {
+  position: absolute;
+  background-image: url("../img/form/form-phone@1.svg");
+  width: 20px;
+  height: 20px;
+  content: "";
+  top: 16px;
+  right: 15px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 769px) {
+  .form__inner--icon::after {
+    top: 22px;
+    right: 18px;
+  }
+}
+
 .form__textarea-block {
   margin: 0 0 37px 0;
   position: relative;
@@ -353,6 +421,14 @@
   }
 }
 
+.form__textarea:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__textarea:focus {
+  outline: 2px solid #444444;
+}
+
 .form__button-block {
   margin: 11px 0 0 0;
   text-align: center;
@@ -405,6 +481,14 @@
   }
 }
 
+.form__button:hover, .form__button:focus {
+  background-color: #5eaa2f;
+}
+
+.form__button:hover:active, .form__button:focus:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form__button-footnote {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -429,7 +513,7 @@
 
 @media (min-width: 1317px) {
   .form__block--user {
-    width: 45%;
+    width: 46.6%;
   }
 }
 
