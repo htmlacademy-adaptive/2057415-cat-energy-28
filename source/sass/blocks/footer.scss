@@ -167,6 +167,16 @@
 }
 
 .footer__logo-title {
+  @media (min-width: 769px) {
+    width: 142px;
+    height: 27px;
+  }
+
+  @media (max-width: 769px) {
+    width: 128px;
+    height: 24px;
+  }
+
   color: #111111;
   fill: #111111;
 }
