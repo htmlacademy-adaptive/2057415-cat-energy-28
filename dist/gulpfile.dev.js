@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.build = exports.styles = void 0;
+exports.default = exports.build = exports.styles = void 0;
 
 var _gulp = _interopRequireDefault(require("gulp"));
 
@@ -31,73 +31,71 @@ var _del = _interopRequireDefault(require("del"));
 
 var _browserSync = _interopRequireDefault(require("browser-sync"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Styles
-var styles = function styles() {
-  return _gulp["default"].src('source/sass/style.scss', {
+const styles = () => {
+  return _gulp.default.src('source/sass/style.scss', {
     sourcemaps: true
-  }).pipe((0, _gulpPlumber["default"])()).pipe((0, _gulpDartSass["default"])().on('error', _gulpDartSass["default"].logError)).pipe((0, _gulpPostcss["default"])([(0, _autoprefixer["default"])(), (0, _postcssCsso["default"])()])).pipe((0, _gulpRename["default"])('style.min.css')).pipe(_gulp["default"].dest('build/css', {
+  }).pipe((0, _gulpPlumber.default)()).pipe((0, _gulpDartSass.default)().on('error', _gulpDartSass.default.logError)).pipe((0, _gulpPostcss.default)([(0, _autoprefixer.default)()])).pipe(_gulp.default.dest('build/css')).pipe((0, _gulpPostcss.default)([(0, _postcssCsso.default)()])).pipe((0, _gulpRename.default)('style.min.css')).pipe(_gulp.default.dest('build/css', {
     sourcemaps: '.'
-  })).pipe(_browserSync["default"].stream());
+  })).pipe(_browserSync.default.stream());
 }; // HTML
 
 
 exports.styles = styles;
 
-var html = function html() {
-  return _gulp["default"].src('source/*.html').pipe(_gulp["default"].dest('build'));
+const html = () => {
+  return _gulp.default.src('source/*.html').pipe(_gulp.default.dest('build'));
 }; // Scripts
 
 
-var scripts = function scripts() {
-  return _gulp["default"].src('source/js/script.js').pipe(_gulp["default"].dest('build/js')).pipe(_browserSync["default"].stream());
+const scripts = () => {
+  return _gulp.default.src('source/js/script.js').pipe(_gulp.default.dest('build/js')).pipe(_browserSync.default.stream());
 }; // Images
 
 
-var optimizeImages = function optimizeImages() {
-  return _gulp["default"].src('source/img/**/*.{png,jpg}').pipe((0, _gulpLibsquoosh["default"])()).pipe(_gulp["default"].dest('build/img'));
+const optimizeImages = () => {
+  return _gulp.default.src('source/img/**/*.{png,jpg}').pipe((0, _gulpLibsquoosh.default)()).pipe(_gulp.default.dest('build/img'));
 };
 
-var copyImages = function copyImages() {
-  return _gulp["default"].src('source/img/**/*.{png,jpg}').pipe(_gulp["default"].dest('build/img'));
+const copyImages = () => {
+  return _gulp.default.src('source/img/**/*.{png,jpg}').pipe(_gulp.default.dest('build/img'));
 }; // WebP
 
 
-var createWebp = function createWebp() {
-  return _gulp["default"].src('source/img/**/*.{png,jpg}').pipe((0, _gulpLibsquoosh["default"])({
+const createWebp = () => {
+  return _gulp.default.src('source/img/**/*.{png,jpg}').pipe((0, _gulpLibsquoosh.default)({
     webp: {}
-  })).pipe(_gulp["default"].dest('build/img'));
+  })).pipe(_gulp.default.dest('build/img'));
 }; // SVG
 
 
-var svg = function svg() {
-  return _gulp["default"].src(['source/img/*.svg', '!source/img/icons/*.svg']).pipe((0, _gulpSvgmin["default"])()).pipe(_gulp["default"].dest('build/img'));
-};
+const svg = () => _gulp.default.src(['source/img/**/*.svg', '!source/img/icons/*.svg']).pipe((0, _gulpSvgmin.default)()).pipe(_gulp.default.dest('build/img'));
 
-var sprite = function sprite() {
-  return _gulp["default"].src('source/img/icons/*.svg').pipe((0, _gulpSvgmin["default"])()).pipe((0, _gulpSvgstore["default"])({
+const sprite = () => {
+  return _gulp.default.src('source/img/icons/*.svg').pipe((0, _gulpSvgmin.default)()).pipe((0, _gulpSvgstore.default)({
     inlineSvg: true
-  })).pipe((0, _gulpRename["default"])('sprite.svg')).pipe(_gulp["default"].dest('build/img'));
+  })).pipe((0, _gulpRename.default)('sprite.svg')).pipe(_gulp.default.dest('build/img'));
 }; // Copy
 
 
-var copy = function copy(done) {
-  _gulp["default"].src(['source/fonts/*.{woff2,woff}', 'source/*.ico'], {
+const copy = done => {
+  _gulp.default.src(['source/fonts/**/*.{woff2,woff}', 'source/*.ico'], {
     base: 'source'
-  }).pipe(_gulp["default"].dest('build'));
+  }).pipe(_gulp.default.dest('build'));
 
   done();
 }; // Clean
 
 
-var clean = function clean() {
-  return (0, _del["default"])('build');
+const clean = () => {
+  return (0, _del.default)('build');
 }; // Server
 
 
-var server = function server(done) {
-  _browserSync["default"].init({
+const server = done => {
+  _browserSync.default.init({
     server: {
       baseDir: 'build'
     },
@@ -110,28 +108,28 @@ var server = function server(done) {
 }; // Reload
 
 
-var reload = function reload(done) {
-  _browserSync["default"].reload();
+const reload = done => {
+  _browserSync.default.reload();
 
   done();
 }; // Watcher
 
 
-var watcher = function watcher() {
-  _gulp["default"].watch('source/sass/**/*.scss', _gulp["default"].series(styles));
+const watcher = () => {
+  _gulp.default.watch('source/sass/**/*.scss', _gulp.default.series(styles));
 
-  _gulp["default"].watch('source/js/script.js', _gulp["default"].series(scripts));
+  _gulp.default.watch('source/js/script.js', _gulp.default.series(scripts));
 
-  _gulp["default"].watch('source/*.html', _gulp["default"].series(html, reload));
+  _gulp.default.watch('source/*.html', _gulp.default.series(html, reload));
 }; // Build
 
 
-var build = _gulp["default"].series(clean, copy, optimizeImages, _gulp["default"].parallel(styles, html, scripts, svg, sprite, createWebp)); // Default
+const build = _gulp.default.series(clean, copy, optimizeImages, _gulp.default.parallel(styles, html, scripts, svg, sprite, createWebp)); // Default
 
 
 exports.build = build;
 
-var _default = _gulp["default"].series(clean, copy, copyImages, _gulp["default"].parallel(styles, html, scripts, svg, sprite, createWebp), _gulp["default"].series(server, watcher));
+var _default = _gulp.default.series(clean, copy, copyImages, _gulp.default.parallel(styles, html, scripts, svg, sprite, createWebp), _gulp.default.series(server, watcher));
 
-exports["default"] = _default;
+exports.default = _default;
 //# sourceMappingURL=gulpfile.dev.js.map

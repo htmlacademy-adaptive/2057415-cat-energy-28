@@ -19,8 +19,9 @@ return gulp.src('source/sass/style.scss', { sourcemaps: true })
 .pipe(plumber())
 .pipe(sass().on('error', sass.logError))
 .pipe(postcss([
-autoprefixer(),
-csso()
+autoprefixer()]))
+.pipe(gulp.dest('build/css'))
+.pipe(postcss([csso()
 ]))
 .pipe(rename('style.min.css'))
 .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
@@ -68,7 +69,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
@@ -86,7 +87,7 @@ inlineSvg: true
 
 const copy = (done) => {
 gulp.src([
-'source/fonts/*.{woff2,woff}',
+'source/fonts/**/*.{woff2,woff}',
 'source/*.ico',
 ], {
 base: 'source'
