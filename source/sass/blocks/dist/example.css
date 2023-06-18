@@ -338,8 +338,9 @@
   }
 }
 
-@media (min-width: 769px) {
-  .example__button-block {
+/*
+.example__button-block {
+  @media (min-width: 769px) {
     width: 560px;
     height: 10px;
     margin: 0 auto;
@@ -349,12 +350,11 @@
   }
 }
 
-@media (min-width: 769px) {
-  .example__range-block {
+.example__range-block {
+  @media (min-width: 769px) {
     width: 100%;
   }
-}
-
+}*/
 .example__picture--before::after {
   position: absolute;
   content: "";

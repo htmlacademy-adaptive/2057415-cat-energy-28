@@ -31,6 +31,8 @@ var _del = _interopRequireDefault(require("del"));
 
 var _browserSync = _interopRequireDefault(require("browser-sync"));
 
+var _gulpSvgSprite = _interopRequireDefault(require("gulp-svg-sprite"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Styles
@@ -74,9 +76,36 @@ const createWebp = () => {
 const svg = () => _gulp.default.src(['source/img/**/*.svg', '!source/img/icons/*.svg']).pipe((0, _gulpSvgmin.default)()).pipe(_gulp.default.dest('build/img'));
 
 const sprite = () => {
-  return _gulp.default.src('source/img/icons/*.svg').pipe((0, _gulpSvgmin.default)()).pipe((0, _gulpSvgstore.default)({
-    inlineSvg: true
-  })).pipe((0, _gulpRename.default)('sprite.svg')).pipe(_gulp.default.dest('build/img'));
+  let config = {
+    shape: {
+      dimension: {
+        maxWidth: 500,
+        maxHeight: 500
+      },
+      spacing: {
+        padding: 0
+      },
+      transform: [{
+        svgo: {
+          plugins: [{
+            name: "removeAttrs",
+            params: {
+              attrs: "(fill|height|width)"
+            }
+          }]
+        }
+      }]
+    },
+    mode: {
+      symbol: {
+        dest: ".",
+        sprite: "sprite.svg"
+      }
+    }
+  };
+  return _gulp.default.src("source/img/icons/*.svg").pipe((0, _gulpSvgSprite.default)(config)).on("error", function (error) {
+    console.log(error);
+  }).pipe(_gulp.default.dest("build/img"));
 }; // Copy
 
 

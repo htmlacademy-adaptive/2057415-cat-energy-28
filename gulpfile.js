@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import svgSprite from 'gulp-svg-sprite';
 
 // Styles
 
@@ -74,14 +75,46 @@ gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-return gulp.src('source/img/icons/*.svg')
-.pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
-}
+  let config = {
+    shape: {
+      dimension: {
+        maxWidth: 500,
+        maxHeight: 500,
+      },
+      spacing: {
+        padding: 0,
+      },
+      transform: [
+        {
+          svgo: {
+            plugins: [
+              {
+                name: "removeAttrs",
+                params: {
+                  attrs: "(fill|height|width)",
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+    mode: {
+      symbol: {
+        dest: ".",
+        sprite: "sprite.svg",
+      },
+    },
+  };
+
+  return gulp
+    .src("source/img/icons/*.svg")
+    .pipe(svgSprite(config))
+    .on("error", function (error) {
+      console.log(error);
+    })
+    .pipe(gulp.dest("build/img"));
+};
 
 // Copy
 

@@ -11,11 +11,6 @@
 }
 
 .field-programs__label {
-  @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -27,12 +22,21 @@
   align-items: center;
 }
 
+@media (min-width: 769px) {
+  .field-programs__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .field-programs__item:not(:last-child) {
-  @media (min-width: 1317px) {
+  margin-bottom: 13px;
+}
+
+@media (min-width: 1317px) {
+  .field-programs__item:not(:last-child) {
     margin-bottom: 6px;
   }
-
-  margin-bottom: 13px;
 }
 
 .field-programs__radio {
@@ -42,13 +46,6 @@
 }
 
 .field-programs__label::before {
-  @media (min-width: 769px) {
-    width: 40px;
-    height: 40px;
-    margin-right: 19px;
-    background-size: 18px 18px;
-  }
-
   content: "";
   width: 30px;
   height: 30px;
@@ -59,6 +56,15 @@
   background-position: center center;
   background-size: 13px 13px;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 769px) {
+  .field-programs__label::before {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+    background-size: 18px 18px;
+  }
 }
 
 .field-programs__radio:checked + label::before {
@@ -81,3 +87,5 @@
 .field-programs__radio:focus:not(:disabled) + .field-programs__label {
   outline: 2px solid #444444;
 }
+
+/*# sourceMappingURL=field-programs.css.map */

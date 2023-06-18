@@ -241,13 +241,16 @@
 .programs__link-block--icon::after {
   content: "";
   background-image: url("../img/icon__folow2--index.svg");
-  width: 34px;
+  width: 24px;
   height: 12px;
   background-repeat: no-repeat;
+  background-position: right center;
+  flex-shrink: 0;
+  background-size: 32px 12px;
 }
 
 .programs__link-block--icon:hover::after {
-  width: 47px;
+  width: 32px;
 }
 
 .programs__link-title {

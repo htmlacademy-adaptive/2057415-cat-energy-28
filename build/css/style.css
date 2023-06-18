@@ -831,13 +831,16 @@ html {
 .programs__link-block--icon::after {
   content: "";
   background-image: url("../img/icon__folow2--index.svg");
-  width: 34px;
+  width: 24px;
   height: 12px;
   background-repeat: no-repeat;
+  background-position: right center;
+  flex-shrink: 0;
+  background-size: 32px 12px;
 }
 
 .programs__link-block--icon:hover::after {
-  width: 47px;
+  width: 32px;
 }
 
 .programs__link-title {
@@ -1407,8 +1410,9 @@ html {
   }
 }
 
-@media (min-width: 769px) {
-  .example__button-block {
+/*
+.example__button-block {
+  @media (min-width: 769px) {
     width: 560px;
     height: 10px;
     margin: 0 auto;
@@ -1418,12 +1422,11 @@ html {
   }
 }
 
-@media (min-width: 769px) {
-  .example__range-block {
+.example__range-block {
+  @media (min-width: 769px) {
     width: 100%;
   }
-}
-
+}*/
 .example__picture--before::after {
   position: absolute;
   content: "";
@@ -3027,6 +3030,10 @@ input::-webkit-inner-spin-button {
   border: 1px solid #bababa;
 }
 
+.field-programs__radio:focus:not(:disabled) + .field-programs__label {
+  outline: 2px solid #444444;
+}
+
 .contacts__title-block {
   padding: 32px 0 35px 0;
 }
@@ -3234,6 +3241,14 @@ input::-webkit-inner-spin-button {
 
 .additionally__input:not(:disabled) + label:hover::before {
   border: 1px solid #bababa;
+}
+
+.additionally__input:not(:disabled) + label:focus::before {
+  border: 2px solid #444444;
+}
+
+.additionally__input:focus:not(:disabled) + .additionally__label {
+  outline: 2px solid #444444;
 }
 
 @media (min-width: 1317px) {
