@@ -20,3 +20,6 @@ toggle.addEventListener('click', function () {
     popover.classList.remove('popover--open');
   }
 });
+
+const slider = document.querySelector('.example__image-wrapper');
+const before = slider.querySelector('example__picture--before');
