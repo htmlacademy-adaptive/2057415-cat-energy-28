@@ -1,10 +1,10 @@
 .cooperation__block {
-  @media (min-width: 769px) {
-    padding: 56px 40px 56px 40px;
-  }
-
   @media (min-width: 1317px) {
     padding: 56px 0 56px 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
+    padding: 56px 40px 56px 40px;
   }
 
   display: flex;
@@ -40,8 +40,8 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  margin: 0;
-  width: 40%;
+  margin: 0 17px 0 0;
+  width: 45%;
 }
 
 .cooperation__addres-block {
@@ -53,15 +53,15 @@
 }
 
 .cooperation__addres {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    text-align: left;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     margin-bottom: 20px;
-  }
-
-  @media (min-width: 1317px) {
-    text-align: left;
   }
 
   font-family: "Lato", sans-serif;
@@ -74,14 +74,14 @@
 }
 
 .cooperation__addres-point {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    text-align: left;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-  }
-
-  @media (min-width: 1317px) {
-    text-align: left;
   }
 
   font-family: "Lato", sans-serif;

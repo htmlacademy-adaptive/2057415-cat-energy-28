@@ -1,10 +1,10 @@
 .footer {
-  @media (min-width: 769px) {
-    padding: 55px 0 55px 0;
-  }
-
   @media (min-width: 1317px) {
     padding: 66px 0 66px 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
+    padding: 55px 0 55px 0;
   }
 
   background-color: #f2f2f2;
@@ -30,7 +30,7 @@
     padding: 0;
   }
   text-align: center;
-  padding: 40px 0 20px 0;
+  padding: 40px 0 16px 0;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -58,7 +58,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 16px 0;
   list-style-type: none;
   margin: 0;
   border-bottom: 1px solid #d9d9d9;

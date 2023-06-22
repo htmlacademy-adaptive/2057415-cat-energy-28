@@ -1,11 +1,4 @@
 .example {
-  @media (min-width: 769px) {
-    position: relative;
-    padding: 40px 0 100px 0;
-    border-top: 1px solid #e6e6e6;
-    background-color: transparent;
-  }
-
   @media (min-width: 1317px) {
     position: relative;
     padding: 0;
@@ -13,7 +6,15 @@
     background-color: transparent;
   }
 
+  @media (min-width: 769px) and (max-width: 1317px) {
+    position: relative;
+    padding: 40px 0 100px 0;
+    border-top: 1px solid #e6e6e6;
+    background-color: transparent;
+  }
+
   background-color: #eaeaea;
+  padding-bottom: 40px;
 }
 
 .example__wrapper {
@@ -45,19 +46,21 @@
   line-height: 40px;
   color: #000000;
   margin: 0 0 40px 0;
+  padding: 25px 0 0 1px;
 }
 
 .example__text {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
   }
 
-  @media (min-width: 1317px) {
-    width: 436px;
-    margin-bottom: 69px;
-  }
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -68,14 +71,14 @@
 }
 
 .example__stats {
-  @media (min-width: 769px) {
-    display: flex;
-    justify-content: space-between;
-  }
-
   @media (min-width: 1317px) {
     flex-wrap: wrap;
     width: 436px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -86,18 +89,19 @@
 }
 
 .example__stats-item {
-  @media (min-width: 769px) {
-    width: 162px;
-  }
-
   @media (min-width: 1317px) {
     margin-bottom: 55px;
   }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
+    width: 162px;
+  }
+
   position: relative;
   display: flex;
   justify-content: center;
   width: 124px;
-  padding: 14px 0 14px 0;
+  padding: 13px 0 17px 0;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 }
@@ -124,10 +128,15 @@
   text-align: center;
   color: #000000;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .example__value-text {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
@@ -137,13 +146,9 @@
     left: 17px;
   }
 
-  @media (min-width: 1317px) {
-    background-color: #eaeaea;
-  }
-
   position: absolute;
-  top: 44px;
-  left: 16px;
+  top: 47px;
+  left: 13px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -159,15 +164,15 @@
 }
 
 .example__total {
-  @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   @media (min-width: 1317px) {
     display: flex;
     justify-content: space-between;
     width: 327px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   font-family: "Oswald", sans-serif;
@@ -177,7 +182,8 @@
   line-height: 20px;
   text-align: center;
   color: #000000;
-  margin: 32px 0 20px 0;
+  margin: 34px 0 20px 0;
+  text-transform: uppercase;
 }
 
 .example__sample-block {
@@ -191,7 +197,14 @@
 }
 
 .example__inner {
-  @media (min-width: 769px) {
+  @media (min-width: 1317px) {
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 100%, rgba(255, 255, 255, 1) 54%);
+    bottom: 0;
+    left: 0;
+    height: 463px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1317px) {
     position: absolute;
     z-index: -1;
     background: linear-gradient(0deg, rgba(234, 234, 234, 1) 60%, rgba(255, 255, 255, 1) 54%);
@@ -199,13 +212,6 @@
     left: 0;
     width: 100%;
     height: 462px;
-  }
-
-  @media (min-width: 1317px) {
-    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 100%, rgba(255, 255, 255, 1) 54%);
-    bottom: 0;
-    left: 0;
-    height: 463px;
   }
 }
 
@@ -313,7 +319,7 @@
   width: 4px;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -3px;
   background-color: #666666;
   z-index: 30;
 }
@@ -325,8 +331,8 @@
   height: 40px;
   z-index: 40;
   background-image: url("../img/thumb--desktop.png");
-  top: 50%;
-  right: -18px;
+  top: 42%;
+  right: -21px;
 }
 
 .example__range {
