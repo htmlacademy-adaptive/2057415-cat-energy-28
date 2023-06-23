@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .popover--open {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .popover--close {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=popover.css.map */

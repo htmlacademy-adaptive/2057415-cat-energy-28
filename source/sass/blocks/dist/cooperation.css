@@ -12,7 +12,7 @@
 
 @media (min-width: 769px) and (max-width: 1317px) {
   .cooperation__block {
-    padding: 56px 40px 56px 40px;
+    padding: 60px 40px 61px 40px;
   }
 }
 
@@ -48,6 +48,7 @@
   .cooperation__title {
     font-size: 20px;
     line-height: 26px;
+    width: 30%;
   }
 }
 
@@ -58,6 +59,13 @@
 @media (min-width: 1317px) {
   .cooperation__addres-block {
     width: 175px;
+  }
+}
+
+@media (min-width: 769px) {
+  .cooperation__addres-block {
+    width: 30%;
+    margin-top: -4px;
   }
 }
 

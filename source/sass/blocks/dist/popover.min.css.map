@@ -1,0 +1,1 @@
+{"version":3,"sources":["popover.scss"],"names":[],"mappings":"AAMA,yBALE,eACE,QAAS,MAKX,gBACE,QAAS","file":"popover.min.css","sourcesContent":[".popover--open {\n  @media (max-width: 768px) {\n    display: block;\n  }\n}\n\n.popover--close {\n  @media (max-width: 768px) {\n    display: none;\n  }\n}\n"]}

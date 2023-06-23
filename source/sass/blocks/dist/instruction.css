@@ -8,9 +8,9 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1317px) {
   .instruction {
-    padding: 45px 0 90px 0;
+    padding: 45px 0 0 0;
   }
 }
 
@@ -30,7 +30,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 }
 
@@ -64,6 +64,9 @@
     max-width: 240px;
     margin: 0;
     padding-bottom: 83px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
 
@@ -73,8 +76,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     width: 50%;
-    max-width: 300px;
-    padding-bottom: 83px;
+    max-width: 324px;
+    padding-bottom: 114px;
   }
 }
 
@@ -98,7 +101,7 @@
   .instruction__item::before {
     position: absolute;
     top: -39px;
-    right: 61px;
+    right: 77px;
     content: counter(licounter) "";
     font-family: "Oswald", sans-serif;
     font-style: normal;
@@ -113,6 +116,7 @@
 @media (min-width: 769px) {
   .instruction__item:nth-child(n+3) {
     margin: 0;
+    padding-bottom: 103px;
   }
 }
 
@@ -208,6 +212,12 @@
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   margin: 1px 0 0 3px;
+}
+
+@media (min-width: 769px) {
+  .instruction__item--one::before {
+    right: 99px;
+  }
 }
 
 /*# sourceMappingURL=instruction.css.map */

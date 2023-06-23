@@ -37,6 +37,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
+    padding-top: 3px;
   }
 
   font-family: "Oswald", sans-serif;
@@ -95,6 +96,7 @@
 
   @media (min-width: 769px) and (max-width: 1317px) {
     width: 162px;
+    padding: 16px 0 17px 0;
   }
 
   position: relative;
@@ -111,6 +113,10 @@
 }
 
 .example__stats-item--right {
+  @media (min-width: 769px) {
+    margin-left: 24px;
+  }
+
   margin-left: 16px;
 }
 
@@ -142,8 +148,8 @@
     background-color: #ffffff;
     width: 130px;
     padding: 0;
-    top: 57px;
-    left: 17px;
+    top: 63px;
+    left: 15px;
   }
 
   position: absolute;
@@ -172,7 +178,10 @@
 
   @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
+    margin: 7px 0 0 0;
+    width: 185px;
+    text-align: right;
   }
 
   font-family: "Oswald", sans-serif;
@@ -188,7 +197,7 @@
 
 .example__sample-block {
   @media (min-width: 769px) and (max-width: 1317px) {
-    margin-top: 99px;
+    margin-top: 104px;
   }
 }
 
@@ -202,12 +211,15 @@
     bottom: 0;
     left: 0;
     height: 463px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
   }
 
   @media (min-width: 769px) and (max-width: 1317px) {
     position: absolute;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 60%, rgba(255, 255, 255, 1) 54%);
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 100%, rgba(255, 255, 255, 1) 54%);
     bottom: 0;
     left: 0;
     width: 100%;
@@ -250,7 +262,7 @@
     }
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     background-image: url("../img/cat-scraggy--mobile@1x.png");
     z-index: 10;
     right: 0;
@@ -271,7 +283,7 @@
     width: 50%;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     position: absolute;
     top: 0;
     height: 256px;
@@ -325,6 +337,10 @@
 }
 
 .example__picture--before::before {
+  @media (min-width: 769px) {
+    top: 46%;
+  }
+
   position: absolute;
   content: "";
   width: 40px;
@@ -339,4 +355,8 @@
   @media (min-width: 769px) {
     width: 100%;
   }
+}
+
+.example__total-span--that {
+  margin-right: 2px;
 }

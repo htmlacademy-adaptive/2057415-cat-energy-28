@@ -4,7 +4,7 @@
   }
 
   @media (min-width: 769px) and (max-width: 1317px) {
-    padding: 56px 40px 56px 40px;
+    padding: 60px 40px 61px 40px;
   }
 
   display: flex;
@@ -32,6 +32,7 @@
   @media (min-width: 769px) {
     font-size: 20px;
     line-height: 26px;
+    width: 30%;
   }
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -47,6 +48,11 @@
 .cooperation__addres-block {
   @media (min-width: 1317px) {
     width: 175px;
+  }
+
+  @media (min-width: 769px) {
+    width: 30%;
+    margin-top: -4px;
   }
 
   width: 50%;

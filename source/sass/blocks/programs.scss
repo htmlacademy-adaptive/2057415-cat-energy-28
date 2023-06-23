@@ -6,12 +6,16 @@
   }
 
   @media (min-width: 769px) and (max-width: 1317px) {
-    padding: 77px 28px 53px 53px;
+    padding: 77px 28px 57px 53px;
   }
 
   padding: 21px 20px 22px 20px;
   margin-top: 20px;
   background-color: #f2f2f2;
+}
+
+.programs__block--next {
+  margin-top: 30px;
 }
 
 .programs__wrapper {
@@ -46,6 +50,7 @@
     font-size: 36px;
     line-height: 36px;
     width: 100%;
+    margin: 0;
   }
 
   font-family: "Oswald", sans-serif;
@@ -60,6 +65,10 @@
   width: calc(100% - 71px);
 }
 
+.programs__item-title--next {
+  padding: 1px 0 0 2px;
+}
+
 .programs__item-text {
   @media (min-width: 1317px) {
     width: 100%;
@@ -70,8 +79,9 @@
   @media (min-width: 769px) and (max-width: 1317px) {
     font-size: 16px;
     line-height: 24px;
-    width: calc(100% - 263px);
+    width: calc(100% - 287px);
     border-bottom: none;
+    padding-bottom: 34px;
   }
 
   font-family: "Lato", sans-serif;
@@ -112,8 +122,8 @@
 
   @media (min-width: 769px) and (max-width: 1317px) {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 14px;
     width: 200px;
     height: 211px;
   }
@@ -132,7 +142,7 @@
     width: 254px;
   }
 
-  margin: 3px 0 0 -5px;
+  margin: 9px 0 0 -5px;
 }
 
 .programs__images--picture::after {
@@ -156,7 +166,7 @@
     left: -20px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     content: "";
     background-image: url("../img/cat-sitting--mobile.svg");
     width: 50px;
@@ -187,7 +197,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     content: "";
     background-image: url("../img/cat-is-standing--mobile.svg");
     width: 67px;
@@ -226,7 +236,7 @@
   @media (min-width: 769px) {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 25px;
+    padding-right: 27px;
   }
 
   font-family: "Oswald", sans-serif;
@@ -243,12 +253,12 @@
 }
 
 .programs__images-icon--tablet {
-  @media (min-width: 769px) {
-    display: block;
-  }
-
   @media (min-width: 1317px) {
     display: none;
+  }
+
+  @media (min-width: 769px) {
+    display: block;
   }
 
   display: none;

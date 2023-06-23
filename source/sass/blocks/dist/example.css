@@ -54,6 +54,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
+    padding-top: 3px;
   }
 }
 
@@ -121,6 +122,7 @@
 @media (min-width: 769px) and (max-width: 1317px) {
   .example__stats-item {
     width: 162px;
+    padding: 16px 0 17px 0;
   }
 }
 
@@ -130,6 +132,12 @@
 
 .example__stats-item--right {
   margin-left: 16px;
+}
+
+@media (min-width: 769px) {
+  .example__stats-item--right {
+    margin-left: 24px;
+  }
 }
 
 .example__value {
@@ -182,8 +190,8 @@
     background-color: #ffffff;
     width: 130px;
     padding: 0;
-    top: 57px;
-    left: 17px;
+    top: 63px;
+    left: 15px;
   }
 }
 
@@ -210,13 +218,16 @@
 @media (min-width: 769px) and (max-width: 1317px) {
   .example__total {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
+    margin: 7px 0 0 0;
+    width: 185px;
+    text-align: right;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1317px) {
   .example__sample-block {
-    margin-top: 99px;
+    margin-top: 104px;
   }
 }
 
@@ -230,6 +241,9 @@
     bottom: 0;
     left: 0;
     height: 463px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
   }
 }
 
@@ -237,7 +251,7 @@
   .example__inner {
     position: absolute;
     z-index: -1;
-    background: linear-gradient(0deg, #eaeaea 60%, white 54%);
+    background: linear-gradient(0deg, #eaeaea 100%, white 54%);
     bottom: 0;
     left: 0;
     width: 100%;
@@ -289,7 +303,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .example__picture--after {
     background-image: url("../img/cat-scraggy--mobile@1x.png");
     z-index: 10;
@@ -298,7 +312,7 @@
   }
 }
 
-@media (max-width: 769px) and (min-resolution: 2dppx) {
+@media (max-width: 768px) and (min-resolution: 2dppx) {
   .example__picture--after {
     background-image: url("../img/cat-scraggy--mobile@2x.png");
   }
@@ -314,7 +328,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .example__picture {
     position: absolute;
     top: 0;
@@ -382,9 +396,19 @@
 }
 
 @media (min-width: 769px) {
+  .example__picture--before::before {
+    top: 46%;
+  }
+}
+
+@media (min-width: 769px) {
   .example__range {
     width: 100%;
   }
+}
+
+.example__total-span--that {
+  margin-right: 2px;
 }
 
 /*# sourceMappingURL=example.css.map */

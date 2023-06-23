@@ -167,11 +167,11 @@
 @media (min-width: 769px) {
   .header__popover {
     display: block;
-    width: 60%;
+    width: 62.45%;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .header__popover {
     position: absolute;
     top: 65px;
@@ -184,31 +184,32 @@
   }
 }
 
-.header__popover-list {
-  list-style-type: none;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0;
-}
-
-@media (max-width: 769px) {
-  .header__popover-list {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 1317px) {
   .header__popover-list {
     justify-content: flex-end;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    padding: 0;
   }
 }
 
-@media (max-width: 769px) {
-  .header__popover-item:not(:last-child) {
-    border-bottom: 1px solid #e6e6e6;
+@media (min-width: 769px) and (max-width: 1317px) {
+  .header__popover-list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 9px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__popover-list {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -218,17 +219,24 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
+  .header__popover-item:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+@media (max-width: 768px) {
   .header__popover-item:first-child {
     border-top: 1px solid #e6e6e6;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .header__popover-item {
     padding: 22px 20px 24px 20px;
     margin: 0 -20px 0 -20px;
     text-align: center;
+    list-style-type: none;
   }
 }
 
@@ -283,7 +291,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .header__popover-link {
     font-family: "Oswald", sans-serif;
     font-style: normal;
@@ -309,18 +317,18 @@
   }
 }
 
-@media (max-width: 769px) {
-  .header__wrapper {
-    position: relative;
-    padding: 10px 0 0 0;
-  }
-}
-
 @media (min-width: 769px) {
   .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    position: relative;
+    padding: 10px 0 0 0;
   }
 }
 
