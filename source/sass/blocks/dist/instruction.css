@@ -2,13 +2,13 @@
   padding: 20px 0 29px 0;
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .instruction {
-    padding: 71px 0 69px 0;
+    padding: 71px 0 0 0;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1317px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .instruction {
     padding: 45px 0 0 0;
   }
@@ -21,7 +21,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0 0 40px 0;
+  margin: 0 0 39px 0;
 }
 
 @media (min-width: 769px) {
@@ -59,9 +59,9 @@
   counter-increment: licounter;
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .instruction__item {
-    max-width: 240px;
+    max-width: 246px;
     margin: 0;
     padding-bottom: 83px;
     display: flex;
@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1317px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .instruction__item {
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .instruction__item::before {
     position: absolute;
     top: -39px;
@@ -97,7 +97,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1317px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .instruction__item::before {
     position: absolute;
     top: -39px;
@@ -131,7 +131,15 @@
   width: calc(100% - 81px);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .instruction__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
   .instruction__item-text {
     font-size: 16px;
     line-height: 24px;
@@ -214,7 +222,13 @@
   margin: 1px 0 0 3px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .instruction__item--one::before {
+    right: 21px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
   .instruction__item--one::before {
     right: 99px;
   }

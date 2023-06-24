@@ -4,29 +4,29 @@
   padding: 26px 0 26px 0;
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .cooperation__block {
-    padding: 56px 0 56px 0;
+    padding: 60px 0 57px 0;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1317px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .cooperation__block {
     padding: 60px 40px 61px 40px;
   }
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .cooperation--block {
     position: relative;
   }
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .cooperation__wrapper {
     position: absolute;
-    top: 75px;
-    left: 45px;
+    top: 95px;
+    left: 110px;
     width: 565px;
     background-color: #ffffff;
   }
@@ -44,7 +44,19 @@
   width: 45%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .cooperation__title {
+    width: 40%;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #111111;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
   .cooperation__title {
     font-size: 20px;
     line-height: 26px;
@@ -56,13 +68,14 @@
   width: 50%;
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .cooperation__addres-block {
-    width: 175px;
+    width: 157px;
+    margin-top: -4px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .cooperation__addres-block {
     width: 30%;
     margin-top: -4px;
@@ -79,13 +92,20 @@
   margin: 0;
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .cooperation__addres {
     text-align: left;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    margin-bottom: 19px;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1317px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .cooperation__addres {
     font-size: 16px;
     line-height: 20px;
@@ -104,13 +124,19 @@
   margin: 0;
 }
 
-@media (min-width: 1317px) {
+@media (min-width: 1440px) {
   .cooperation__addres-point {
     text-align: left;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1317px) {
+@media (min-width: 769px) and (max-width: 1439px) {
   .cooperation__addres-point {
     font-size: 16px;
     line-height: 20px;
@@ -122,6 +148,20 @@
   width: 100%;
   height: 362px;
   display: block;
+}
+
+@media (min-width: 1440px) {
+  .cooperation__map {
+    height: 400px;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cooperation__map-block {
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=cooperation.css.map */

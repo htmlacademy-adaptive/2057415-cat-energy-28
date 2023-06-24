@@ -1,9 +1,9 @@
 .instruction {
-  @media (min-width: 1317px) {
-    padding: 71px 0 69px 0;
+  @media (min-width: 1440px) {
+    padding: 71px 0 0 0;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     padding: 45px 0 0 0;
   }
 
@@ -25,7 +25,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0 0 40px 0;
+  margin: 0 0 39px 0;
 }
 
 .instruction__list {
@@ -43,8 +43,8 @@
 }
 
 .instruction__item {
-  @media (min-width: 1317px) {
-    max-width: 240px;
+  @media (min-width: 1440px) {
+    max-width: 246px;
     margin: 0;
     padding-bottom: 83px;
     display: flex;
@@ -52,7 +52,7 @@
     align-items: flex-start;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -70,7 +70,7 @@
 }
 
 .instruction__item::before {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     position: absolute;
     top: -39px;
     right: 0;
@@ -84,7 +84,7 @@
     z-index: -1;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     position: absolute;
     top: -39px;
     right: 77px;
@@ -107,7 +107,13 @@
 }
 
 .instruction__item-text {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     font-size: 16px;
     line-height: 24px;
     width: 250px;
@@ -196,7 +202,11 @@
 }
 
 .instruction__item--one::before {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    right: 21px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     right: 99px;
   }
 }

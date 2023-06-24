@@ -1,5 +1,5 @@
 .header {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     padding-top: 53px;
     background-color: transparent;
   }
@@ -34,12 +34,12 @@
 }
 
 .header__logo {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     width: 202px;
     height: 59px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     width: 174px;
     height: 51px;
   }
@@ -137,13 +137,13 @@
 }
 
 .header__logo--tablet {
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     display: block;
   }
 }
 
 .header__logo--desktop {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     display: block;
     width: 202px;
   }
@@ -178,16 +178,16 @@
 }
 
 .header__popover-list {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     justify-content: flex-end;
     list-style-type: none;
     width: 100%;
     margin: 0;
     display: flex;
-    padding: 0;
+    padding: 0 0 18px 0;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -203,8 +203,8 @@
 }
 
 .header__popover-item:not(:last-child) {
-  @media (min-width: 1317px) {
-    margin-right: 37px;
+  @media (min-width: 1440px) {
+    margin-right: 35px;
   }
 
   @media (max-width: 768px) {
@@ -233,7 +233,7 @@
 }
 
 .header__popover-item--active .header__popover-link::after {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     background-color: #ffffff;
   }
 
@@ -257,7 +257,7 @@
 }
 
 .header__popover-link {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
@@ -265,7 +265,7 @@
     text-decoration: none;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -294,7 +294,7 @@
 }
 
 .header__link--dark {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     color: #000000;
   }
 }
