@@ -1,5 +1,10 @@
 .add-offers {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    padding: 0 20px 87px 20px;
+    margin: 0 -20px 0 -20px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     padding: 0 20px 70px 20px;
     margin: 0 -20px 0 -20px;
   }
@@ -17,8 +22,12 @@
 }
 
 .add-offers__wrapper::before {
-  @media (min-width: 769px) {
-    top: 21px;
+  @media (min-width: 1440px) {
+    top: 23px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    top: 23px;
   }
 
   position: absolute;
@@ -32,7 +41,14 @@
 }
 
 .add-offers__title {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 79px 0;
+    padding-right: 34px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 79px 0;
@@ -54,11 +70,12 @@
 
 .add-offers__item {
   @media (min-width: 1440px) {
-    padding: 15px 0 15px 0;
+    padding: 16px 0 15px 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -104,7 +121,10 @@
   @media (min-width: 1440px) {
     margin: 0 5px 0 0;
     padding: 0;
-    min-width: 324px;
+    /*min-width: 324px;*/
+    font-size: 20px;
+    line-height: 20px;
+    width: 32%;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -128,6 +148,13 @@
 }
 
 .add-offers__product-item {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,7 +176,12 @@
 }
 
 .add-offers__item-price {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    margin-left: 49px;
+    margin-right: 4px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     margin-left: 49px;
     margin-right: 4px;
   }
@@ -158,7 +190,7 @@
 .add-offers__product-list {
   @media (min-width: 1440px) {
     margin: 0 5px 0 0;
-    min-width: 225px;
+    min-width: 287px;
     max-width: 315px;
   }
 
@@ -175,7 +207,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 43px 42px 40px;
+    padding: 59px 43px 42px 40px;
     background-repeat: no-repeat;
     background-size: 245px 100%;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--desktop@1x.png");
@@ -238,9 +270,8 @@
 
 .add-offers__button {
   @media (min-width: 1440px) {
-    /*line-height: 20;*/
-    padding: 14px 0 14px 0;
-    width: 27%;
+    padding: 11px 0 9px 0;
+    width: 27.3%;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {

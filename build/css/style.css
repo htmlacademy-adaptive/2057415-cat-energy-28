@@ -2014,6 +2014,12 @@ html {
   }
 }
 
+@media (min-width: 1440px) {
+  .catalog {
+    padding-bottom: 10px;
+  }
+}
+
 .catalog__item-block {
   border-bottom: 1px solid #ebebeb;
   padding: 19px 20px 20px 20px;
@@ -2023,10 +2029,10 @@ html {
 @media (min-width: 1440px) {
   .catalog__item-block {
     border: none;
-    margin: 0 0 60px 0;
-    padding: 0 36px 39px 36px;
-    width: 13%;
-    background-image: linear-gradient(0deg, #f2f2f2 84%, white 16%);
+    margin: 0 0 66px 0;
+    padding: 0 36px 39px 40px;
+    width: 20%;
+    background-image: linear-gradient(0deg, #f2f2f2 84.7%, white 16%);
   }
 }
 @media (min-width: 769px) and (max-width: 1439px) {
@@ -2073,7 +2079,16 @@ html {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .catalog__image-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 196px;
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .catalog__image-block {
     display: flex;
     justify-content: center;
@@ -2129,7 +2144,19 @@ html {
   text-decoration: none;
   margin-bottom: 13px;
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .catalog__card-title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    margin: 45px 20px 16px 8px;
+    text-align: center;
+    width: 158px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .catalog__card-title {
     font-family: "Oswald", sans-serif;
     font-style: normal;
@@ -2164,7 +2191,14 @@ html {
   border-spacing: 0;
   padding-bottom: 9px;
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .catalog__card-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 2px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .catalog__card-table {
     border-collapse: collapse;
     width: 100%;
@@ -2194,8 +2228,8 @@ html {
 @media (min-width: 1440px) {
   .catalog__more-block {
     border: 2px solid #f2f2f2;
-    margin: 85px 0 56px 0;
-    padding: 52px 38px 38px 38px;
+    margin: 78px 0 64px 0;
+    padding: 44px 41px 38px 44px;
     width: 13%;
     display: flex;
     flex-direction: column;
@@ -2274,6 +2308,11 @@ html {
 .catalog__more-top {
   padding: 8px 0 0 0;
 }
+@media (min-width: 1440px) {
+  .catalog__more-top {
+    padding: 0;
+  }
+}
 
 .catalog__item-next {
   font-family: "Oswald", sans-serif;
@@ -2314,14 +2353,26 @@ html {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .catalog__card-image {
+    width: 169px;
+    height: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .catalog__card-image {
     width: 168px;
     height: auto;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .catalog__card-image--small {
+    width: 153px;
+    height: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .catalog__card-image--small {
     width: 161px;
     height: auto;
@@ -2332,7 +2383,13 @@ html {
   position: relative;
   padding: 25px 0 34px 0;
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .add-offers {
+    padding: 0 20px 87px 20px;
+    margin: 0 -20px 0 -20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .add-offers {
     padding: 0 20px 70px 20px;
     margin: 0 -20px 0 -20px;
@@ -2357,9 +2414,14 @@ html {
   right: -20px;
   background-color: #68b738;
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
   .add-offers__wrapper::before {
-    top: 21px;
+    top: 23px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
+  .add-offers__wrapper::before {
+    top: 23px;
   }
 }
 
@@ -2376,7 +2438,15 @@ html {
   padding-right: 21px;
   background-color: #ffffff;
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .add-offers__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 79px 0;
+    padding-right: 34px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .add-offers__title {
     font-size: 36px;
     line-height: 36px;
@@ -2387,11 +2457,12 @@ html {
 
 @media (min-width: 1440px) {
   .add-offers__item {
-    padding: 15px 0 15px 0;
+    padding: 16px 0 15px 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 769px) and (max-width: 1439px) {
@@ -2454,7 +2525,10 @@ html {
   .add-offers__product-title {
     margin: 0 5px 0 0;
     padding: 0;
-    min-width: 324px;
+    /*min-width: 324px;*/
+    font-size: 20px;
+    line-height: 20px;
+    width: 32%;
   }
 }
 @media (min-width: 769px) and (max-width: 1439px) {
@@ -2470,6 +2544,14 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1440px) {
+  .add-offers__product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+  }
 }
 
 .add-offers__item-sum,
@@ -2489,7 +2571,13 @@ html {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
+  .add-offers__item-price {
+    margin-left: 49px;
+    margin-right: 4px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
   .add-offers__item-price {
     margin-left: 49px;
     margin-right: 4px;
@@ -2502,7 +2590,7 @@ html {
 @media (min-width: 1440px) {
   .add-offers__product-list {
     margin: 0 5px 0 0;
-    min-width: 225px;
+    min-width: 287px;
     max-width: 315px;
   }
 }
@@ -2518,7 +2606,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 43px 42px 40px;
+    padding: 59px 43px 42px 40px;
     background-repeat: no-repeat;
     background-size: 245px 100%;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--desktop@1x.png");
@@ -2604,9 +2692,8 @@ html {
 }
 @media (min-width: 1440px) {
   .add-offers__button {
-    /*line-height: 20;*/
-    padding: 14px 0 14px 0;
-    width: 27%;
+    padding: 11px 0 9px 0;
+    width: 27.3%;
   }
 }
 @media (min-width: 769px) and (max-width: 1439px) {
@@ -2685,7 +2772,7 @@ html {
 
 @media (min-width: 1440px) {
   .title-block {
-    padding: 74px 0 84px 0;
+    padding: 56px 0 87px 0;
   }
 }
 @media (min-width: 769px) and (max-width: 1439px) {

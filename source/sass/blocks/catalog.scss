@@ -1,10 +1,16 @@
+.catalog {
+  @media (min-width: 1440px) {
+    padding-bottom: 10px;
+  }
+}
+
 .catalog__item-block {
   @media (min-width: 1440px) {
     border: none;
-    margin: 0 0 60px 0;
-    padding: 0 36px 39px 36px;
-    width: 13%;
-    background-image: linear-gradient(0deg, rgba(242, 242, 242, 1) 84%, rgba(255, 255, 255, 1) 16%);
+    margin: 0 0 66px 0;
+    padding: 0 36px 39px 40px;
+    width: 20%;
+    background-image: linear-gradient(0deg, rgba(242, 242, 242, 1) 84.7%, rgba(255, 255, 255, 1) 16%);
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -55,7 +61,15 @@
 }
 
 .catalog__image-block {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 196px;
+    width: 100%;
+  }
+
+  @media (min-width: 769px)and (max-width: 1439px) {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -95,7 +109,18 @@
 }
 
 .catalog__card-title {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    margin: 45px 20px 16px 8px;
+    text-align: center;
+    width: 158px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -136,7 +161,13 @@
 }
 
 .catalog__card-table {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 2px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     border-collapse: collapse;
     width: 100%;
     padding: 0;
@@ -163,8 +194,8 @@
 .catalog__more-block {
   @media (min-width: 1440px) {
     border: 2px solid #f2f2f2;
-    margin: 85px 0 56px 0;
-    padding: 52px 38px 38px 38px;
+    margin: 78px 0 64px 0;
+    padding: 44px 41px 38px 44px;
     width: 13%;
     display: flex;
     flex-direction: column;
@@ -249,6 +280,10 @@
 }
 
 .catalog__more-top {
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+
   padding: 8px 0 0 0;
 }
 
@@ -290,14 +325,24 @@
 }
 
 .catalog__card-image {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    width: 169px;
+    height: auto;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     width: 168px;
     height: auto;
   }
 }
 
 .catalog__card-image--small {
-  @media (min-width: 769px) {
+  @media (min-width: 1440px) {
+    width: 153px;
+    height: auto;
+  }
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     width: 161px;
     height: auto;
   }
