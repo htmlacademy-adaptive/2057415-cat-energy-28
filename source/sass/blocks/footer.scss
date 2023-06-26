@@ -30,7 +30,7 @@
   }
 }
 
-.footer__logo--wrapper {
+.footer__block--logo {
   @media (min-width: 1440px) {
     border: none;
     padding: 0;
@@ -210,7 +210,7 @@
   fill: #111111;
 }
 
-.footer__social--block {
+.footer__block--social {
   @media (min-width: 769px) {
     width: 50%;
   }

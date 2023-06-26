@@ -318,12 +318,12 @@ input::-webkit-inner-spin-button {
   outline: 2px solid #444444;
 }
 
-.form__inner--icon,
-.form__inner--image {
+.form__inner-block--icon,
+.form__inner-block--image {
   position: relative;
 }
 
-.form__inner--image::after {
+.form__inner-block--image::after {
   position: absolute;
   background-image: url("../img/form/form-email@1.svg");
   width: 20px;
@@ -335,13 +335,13 @@ input::-webkit-inner-spin-button {
 }
 
 @media (min-width: 769px) {
-  .form__inner--image::after {
+  .form__inner-block--image::after {
     top: 16px;
     right: 20px;
   }
 }
 
-.form__inner--icon::after {
+.form__inner-block--icon::after {
   position: absolute;
   background-image: url("../img/form/form-phone@1.svg");
   width: 20px;
@@ -353,14 +353,14 @@ input::-webkit-inner-spin-button {
 }
 
 @media (min-width: 1440px) {
-  .form__inner--icon::after {
+  .form__inner-block--icon::after {
     top: 18px;
     right: 15px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1439px) {
-  .form__inner--icon::after {
+  .form__inner-block--icon::after {
     top: 18px;
     right: 17px;
   }

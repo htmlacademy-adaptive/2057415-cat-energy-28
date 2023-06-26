@@ -155,3 +155,13 @@
 .additionally__input:focus:not(:disabled) + .additionally__label {
   outline: 2px solid #444444;
 }
+
+.additionally__title--contacts {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+}

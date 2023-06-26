@@ -143,14 +143,14 @@
   align-items: center;
 }
 
-.instruction__image--icon,
+.instruction__image-block--icon,
 .instruction__image-block--watch,
 .instruction__image-block--fork,
 .instruction__image-block--water {
   position: relative;
 }
 
-.instruction__image--icon::after {
+.instruction__image-block--icon::after {
   position: absolute;
   content: "";
   background-image: url("../img/icon__leaf--index.svg");

@@ -276,12 +276,12 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.form__inner--icon,
-.form__inner--image {
+.form__inner-block--icon,
+.form__inner-block--image {
   position: relative;
 }
 
-.form__inner--image::after {
+.form__inner-block--image::after {
   @media (min-width: 769px) {
     top: 16px;
     right: 20px;
@@ -297,7 +297,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
 }
 
-.form__inner--icon::after {
+.form__inner-block--icon::after {
   @media (min-width: 1440px) {
     top: 18px;
     right: 15px;

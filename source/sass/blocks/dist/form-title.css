@@ -1,17 +1,17 @@
 @media (min-width: 1440px) {
-  .form-title__block {
+  .form-title {
     padding: 55px 0 66px 0;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1439px) {
-  .form-title__block {
+  .form-title {
     padding: 47px 37px 66px 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .form-title__block {
+  .form-title {
     border-top: 1px solid #d9d9d9;
     padding: 27px 0 39px 0;
   }

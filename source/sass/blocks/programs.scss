@@ -245,7 +245,7 @@
   }
 }
 
-.programs__link-block--icon::after {
+.programs__item-link--icon::after {
   content: "";
   background-image: url("../img/icon__folow2--index.svg");
   width: 24px;
@@ -256,7 +256,7 @@
   background-size: 32px 12px;
 }
 
-.programs__link-block--icon:hover::after {
+.programs__item-link--icon:hover::after {
   width: 32px;
 }
 
