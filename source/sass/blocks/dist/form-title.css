@@ -6,12 +6,11 @@
 
 @media (min-width: 769px) and (max-width: 1439px) {
   .form-title__block {
-    border-top: none;
-    padding: 65px 37px 66px 40px;
+    padding: 47px 37px 66px 40px;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .form-title__block {
     border-top: 1px solid #d9d9d9;
     padding: 27px 0 39px 0;

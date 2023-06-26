@@ -27,6 +27,7 @@
   .additionally::before {
     width: 150%;
     right: -65px;
+    top: -14px;
   }
 }
 
@@ -105,12 +106,18 @@
 
 @media (min-width: 769px) and (max-width: 1439px) {
   .additionally__item {
-    width: 50%;
+    width: 45.8%;
     margin-bottom: 32px;
   }
 }
 
-@media (max-width: 769px) {
+@media (min-width: 769px) and (max-width: 1439px) {
+  .additionally__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
   .additionally__item:not(:last-child) {
     margin-bottom: 11px;
   }
@@ -136,8 +143,8 @@
 
 @media (min-width: 769px) {
   .additionally__label::before {
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     margin-right: 20px;
     background-size: 24px 18px;
   }
