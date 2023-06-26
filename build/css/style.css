@@ -2283,6 +2283,11 @@ html {
   background-color: #68b738;
   padding: 10px 0 10px 0;
 }
+@media (min-width: 769px) and (max-width: 1439px) {
+  .catalog__card-button {
+    margin-left: 3px;
+  }
+}
 .catalog__card-button:hover, .catalog__card-button:focus {
   background-color: #5eaa2f;
 }
@@ -2297,6 +2302,11 @@ html {
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+}
+@media (min-width: 769px) and (max-width: 1439px) {
+  .catalog__card-button--grey {
+    margin-left: 0;
+  }
 }
 .catalog__card-button--grey:hover, .catalog__card-button--grey:focus {
   background-color: #ebebeb;
@@ -2361,7 +2371,7 @@ html {
 }
 @media (min-width: 769px) and (max-width: 1439px) {
   .catalog__card-image {
-    width: 168px;
+    width: 171px;
     height: auto;
   }
 }
@@ -2374,8 +2384,15 @@ html {
 }
 @media (min-width: 769px) and (max-width: 1439px) {
   .catalog__card-image--small {
-    width: 161px;
+    width: 168px;
     height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
+  .catalog__data--weight,
+.catalog__data--price {
+    margin-right: 4px;
   }
 }
 
@@ -2421,7 +2438,7 @@ html {
 }
 @media (min-width: 769px) and (max-width: 1439px) {
   .add-offers__wrapper::before {
-    top: 23px;
+    top: 21px;
   }
 }
 
@@ -2452,6 +2469,7 @@ html {
     line-height: 36px;
     margin: 0 0 79px 0;
     padding-left: 37px;
+    padding-right: 36px;
   }
 }
 

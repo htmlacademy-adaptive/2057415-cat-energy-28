@@ -236,6 +236,10 @@
 }
 
 .catalog__card-button {
+  @media (min-width: 769px) and (max-width: 1439px) {
+    margin-left: 3px;
+  }
+
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -262,6 +266,10 @@
 }
 
 .catalog__card-button--grey {
+  @media (min-width: 769px) and (max-width: 1439px) {
+    margin-left: 0;
+  }
+
   display: block;
   width: 100%;
   color: #444444;
@@ -331,7 +339,7 @@
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
-    width: 168px;
+    width: 171px;
     height: auto;
   }
 }
@@ -343,7 +351,14 @@
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
-    width: 161px;
+    width: 168px;
     height: auto;
+  }
+}
+
+.catalog__data--weight,
+.catalog__data--price {
+  @media (min-width: 769px) and (max-width: 1439px) {
+    margin-right: 4px;
   }
 }
