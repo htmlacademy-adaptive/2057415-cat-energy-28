@@ -28,11 +28,11 @@
 }
 
 .field-programs__item:not(:last-child) {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     margin-bottom: 6px;
   }
 
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 .field-programs__radio {
@@ -50,12 +50,12 @@
   }
 
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 13px;
   background-position: center center;
   background-size: 13px 13px;
   background-repeat: no-repeat;

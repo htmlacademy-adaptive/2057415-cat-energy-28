@@ -1,9 +1,9 @@
 .form-title__block {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     padding: 73px 0 66px 0;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     border-top: none;
     padding: 65px 37px 66px 40px;
   }
@@ -15,13 +15,13 @@
 }
 
 .form-title__main-title {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     padding: 0 0 56px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: 769px) and (max-width: 1317px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     font-size: 60px;
     line-height: 60px;
     padding: 0 0 54px 0;
