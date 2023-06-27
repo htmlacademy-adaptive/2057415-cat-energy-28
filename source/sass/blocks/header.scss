@@ -1,10 +1,10 @@
 .header {
+  background-color: #ffffff;
+
   @media (min-width: 1440px) {
     padding-top: 53px;
     background-color: transparent;
   }
-
-  background-color: #ffffff;
 }
 
 .header__logo-link {
@@ -34,14 +34,14 @@
 }
 
 .header__logo {
-  @media (min-width: 1440px) {
-    width: 202px;
-    height: 59px;
-  }
-
   @media (min-width: 769px) and (max-width: 1439px) {
     width: 174px;
     height: 51px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -50,10 +50,6 @@
 }
 
 .header__toggle-burger {
-  @media (min-width: 769px) {
-    display: none;
-  }
-
   border: none;
   cursor: pointer;
   display: block;
@@ -62,6 +58,10 @@
   height: 16px;
   background-color: #ffffff;
   padding: 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
 
 .header__toggle-burger::after {
@@ -86,10 +86,6 @@
 }
 
 .header__toggle--close {
-  @media (min-width: 769px) {
-    display: none;
-  }
-
   display: block;
   border: none;
   cursor: pointer;
@@ -98,6 +94,10 @@
   height: 19px;
   background-color: #ffffff;
   padding: 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
 
 .header__toggle--close::after {
@@ -150,21 +150,16 @@
 }
 
 .header__logo-title {
-  @media (min-width: 769px) {
-    display: none;
-  }
-
   width: 101px;
   margin-right: 7px;
   padding-top: 3px;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
 
 .header__popover {
-  @media (min-width: 769px) {
-    display: block;
-    width: 62.45%;
-  }
-
   @media (max-width: 768px) {
     position: absolute;
     top: 64px;
@@ -175,16 +170,19 @@
     margin: 0 -20px 0 -20px;
     padding: 0 20px 0 20px;
   }
+
+  @media (min-width: 769px) {
+    display: block;
+    width: 62.45%;
+  }
 }
 
 .header__popover-list {
-  @media (min-width: 1440px) {
-    justify-content: flex-end;
-    list-style-type: none;
-    width: 100%;
-    margin: 0;
+  @media (max-width: 768px) {
     display: flex;
-    padding: 0 0 18px 0;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -196,21 +194,23 @@
     padding: 0 0 9px 0;
   }
 
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: 1440px) {
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    display: flex;
+    padding: 0 0 18px 0;
   }
 }
 
 .header__popover-item:not(:last-child) {
-  @media (min-width: 1440px) {
-    margin-right: 35px;
-  }
-
   @media (max-width: 768px) {
     border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 35px;
   }
 }
 
@@ -235,10 +235,6 @@
 }
 
 .header__popover-item--active .header__popover-link::after {
-  @media (min-width: 1440px) {
-    background-color: #ffffff;
-  }
-
   position: absolute;
   content: "";
   width: 100%;
@@ -246,6 +242,10 @@
   background-color: #38b738;
   bottom: -8px;
   left: 0;
+
+  @media (min-width: 1440px) {
+    background-color: #ffffff;
+  }
 }
 
 .header__popover-item--dynamic .header__popover-link::after {
@@ -259,12 +259,15 @@
 }
 
 .header__popover-link {
-  @media (min-width: 1440px) {
+  @media (max-width: 768px) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #ffffff;
+    line-height: 20px;
     text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -275,24 +278,21 @@
     text-decoration: none;
   }
 
-  @media (max-width: 768px) {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 500;
+  @media (min-width: 1440px) {
     font-size: 20px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #000000;
+    line-height: 30px;
     text-transform: uppercase;
-  }
+    color: #ffffff;
+    text-decoration: none;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -304,14 +304,14 @@
 
 
 .header__wrapper {
+  @media (max-width: 768px) {
+    position: relative;
+    padding: 10px 0 0 0;
+  }
+
   @media (min-width: 769px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @media (max-width: 768px) {
-    position: relative;
-    padding: 10px 0 0 0;
   }
 }

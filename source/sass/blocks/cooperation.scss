@@ -1,15 +1,15 @@
 .cooperation__block {
-  @media (min-width: 1440px) {
-    padding: 60px 0 57px 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0 26px 0;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     padding: 60px 40px 61px 40px;
   }
 
-  display: flex;
-  justify-content: space-between;
-  padding: 26px 0 26px 0;
+  @media (min-width: 1440px) {
+    padding: 60px 0 57px 0;
+  }
 }
 
 .cooperation--block {
@@ -29,23 +29,7 @@
 }
 
 .cooperation__title {
-  @media (min-width: 1440px) {
-    width: 40%;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #111111;
-  }
-
-  @media (min-width: 769px) and (max-width: 1439px) {
-    font-size: 20px;
-    line-height: 26px;
-    width: 30%;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -54,33 +38,46 @@
   text-transform: uppercase;
   margin: 0 17px 0 0;
   width: 45%;
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 30%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 40%;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #111111;
+  }
 }
 
 .cooperation__addres-block {
-  @media (min-width: 1440px) {
-    width: 157px;
-    margin-top: -4px;
-  }
+  width: 50%;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     width: 30%;
     margin-top: -4px;
   }
 
-  width: 50%;
+  @media (min-width: 1440px) {
+    width: 157px;
+    margin-top: -4px;
+  }
 }
 
 .cooperation__addres {
-  @media (min-width: 1440px) {
-    text-align: left;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #444444;
-    margin-bottom: 19px;
-  }
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     font-size: 16px;
@@ -89,25 +86,26 @@
     margin-bottom: 20px;
   }
 
-  font-family: "Lato", sans-serif;
+  @media (min-width: 1440px) {
+    text-align: left;
+    font-family: "Lato", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    margin-bottom: 19px;
+  }
+}
+
+.cooperation__addres-point {
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
   margin: 0;
-}
-
-.cooperation__addres-point {
-  @media (min-width: 1440px) {
-    text-align: left;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #444444;
-  }
 
   @media (min-width: 769px) and (max-width: 1439px) {
     font-size: 16px;
@@ -115,25 +113,29 @@
     text-align: right;
   }
 
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-  margin: 0;
+  @media (min-width: 1440px) {
+    text-align: left;
+    font-family: "Lato", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+  }
 }
 
 .cooperation__map {
+  width: 100%;
+  height: 362px;
+  display: block;
+  border: none;
+
   @media (min-width: 1440px) {
     height: 400px;
     width: 100%;
     display: block;
+    border: none;
   }
-
-  width: 100%;
-  height: 362px;
-  display: block;
 }
 
 .cooperation__map-block {

@@ -1,32 +1,20 @@
 .form-title {
-  @media (min-width: 1440px) {
-    padding: 55px 0 66px 0;
+  @media (max-width: 768px) {
+    border-top: 1px solid #d9d9d9;
+    padding: 27px 0 39px 0;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
     padding: 47px 37px 66px 40px;
   }
 
-  @media (max-width: 768px) {
-    border-top: 1px solid #d9d9d9;
-    padding: 27px 0 39px 0;
+  @media (min-width: 1440px) {
+    padding: 55px 0 66px 0;
   }
 }
 
 .form-title__main-title {
-  @media (min-width: 1440px) {
-    padding: 0 0 56px 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  @media (min-width: 769px) and (max-width: 1439px) {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 0 0 54px 0;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -34,16 +22,22 @@
   color: #000000;
   margin: 0;
   padding: 0 0 37px 0;
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 54px 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 0 56px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-title__text {
-  @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 30px;
-    max-width: 323px;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -52,4 +46,10 @@
   text-transform: uppercase;
   margin: 0;
   max-width: 226px;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
 }

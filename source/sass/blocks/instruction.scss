@@ -1,16 +1,24 @@
 .instruction {
-  @media (min-width: 1440px) {
-    padding: 71px 0 0 0;
-  }
+  padding: 20px 0 29px 0;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     padding: 45px 0 0 0;
   }
 
-  padding: 20px 0 29px 0;
+  @media (min-width: 1440px) {
+    padding: 71px 0 0 0;
+  }
 }
 
 .instruction__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0 0 39px 0;
+
   @media (min-width: 769px) {
     font-style: normal;
     font-weight: 400;
@@ -18,39 +26,29 @@
     line-height: 60px;
     margin-bottom: 71px;
   }
-
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-  margin: 0 0 39px 0;
 }
 
 .instruction__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: licounter;
+
   @media (min-width: 769px) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  counter-reset: licounter;
 }
 
 .instruction__item {
-  @media (min-width: 1440px) {
-    max-width: 246px;
-    margin: 0;
-    padding-bottom: 83px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  counter-increment: licounter;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     display: flex;
@@ -61,19 +59,21 @@
     padding-bottom: 114px;
   }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  counter-increment: licounter;
+  @media (min-width: 1440px) {
+    max-width: 246px;
+    margin: 0;
+    padding-bottom: 83px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .instruction__item::before {
-  @media (min-width: 1440px) {
+  @media (min-width: 769px) and (max-width: 1439px) {
     position: absolute;
     top: -39px;
-    right: 0;
+    right: 77px;
     content: counter(licounter) "";
     font-family: "Oswald", sans-serif;
     font-style: normal;
@@ -84,12 +84,12 @@
     z-index: -1;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 1440px) {
     position: absolute;
     top: -39px;
-    right: 77px;
+    right: 0;
     content: counter(licounter) "";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 280px;
@@ -107,18 +107,7 @@
 }
 
 .instruction__item-text {
-  @media (min-width: 1440px) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 250px;
-  }
-
-  @media (min-width: 769px) and (max-width: 1439px) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 250px;
-  }
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -126,21 +115,33 @@
   color: #444444;
   margin: 0;
   width: calc(100% - 81px);
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+  }
 }
 
 .instruction__image-block {
-  @media (min-width: 769px) {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 31px;
-  }
-
   width: 60px;
   height: 60px;
   background-color: #68b738;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 769px) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
 
 .instruction__image-block--icon,
@@ -202,11 +203,11 @@
 }
 
 .instruction__item--one::before {
-  @media (min-width: 1440px) {
-    right: 21px;
-  }
-
   @media (min-width: 769px) and (max-width: 1439px) {
     right: 99px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 21px;
   }
 }

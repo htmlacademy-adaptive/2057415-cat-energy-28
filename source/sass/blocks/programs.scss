@@ -1,26 +1,26 @@
 .programs__block {
-  @media (min-width: 1440px) {
-    padding: 38px 52px 58px 52px;
-    width: 38.2%;
-    height: auto;
-  }
+  padding: 21px 20px 22px 20px;
+  margin-top: 20px;
+  background-color: #f2f2f2;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     padding: 77px 28px 57px 53px;
   }
 
-  padding: 21px 20px 22px 20px;
-  margin-top: 20px;
-  background-color: #f2f2f2;
+  @media (min-width: 1440px) {
+    padding: 38px 52px 58px 52px;
+    width: 38.2%;
+    height: auto;
+  }
 }
 
 .programs__block--next {
-  @media (min-width: 1440px) {
-    margin-top: 19px;
-  }
-
   @media (min-width: 769px) and (max-width: 1439px) {
     margin-top: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 19px;
   }
 }
 
@@ -32,36 +32,21 @@
 }
 
 .programs__item-block {
-  @media (min-width: 1440px) {
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: 769px) {
     position: relative;
   }
 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @media (min-width: 1440px) {
+    align-items: center;
+  }
 }
 
 .programs__item-title {
-  @media (min-width: 1440px) {
-    font-size: 36px;
-    line-height: 36px;
-    width: calc(100% - 160px);
-    margin: 0;
-    padding-top: 7px;
-  }
-
-  @media (min-width: 769px) and (max-width: 1439px) {
-    font-size: 36px;
-    line-height: 36px;
-    width: 100%;
-    margin: 0;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -71,24 +56,58 @@
   margin-top: 8px;
   margin-bottom: 8px;
   width: calc(100% - 71px);
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 36px;
+    width: calc(100% - 160px);
+    margin: 0;
+    padding-top: 7px;
+  }
 }
 
 .programs__item-title--next {
-  @media (min-width: 1440px) {
-    padding: 7px 0 0 0;
-  }
+  margin: 0;
+  padding: 7px 0 0 0;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     padding: 0;
   }
 
-  margin: 0;
-  padding: 7px 0 0 0;
+  @media (min-width: 1440px) {
+    padding: 7px 0 0 0;
+  }
 }
 
 .programs__item-text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 23px 0 0 0;
+  padding-bottom: 21px;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 769px) and (max-width: 1439px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: calc(100% - 287px);
+    border-bottom: none;
+    padding-bottom: 34px;
+  }
+
   @media (min-width: 1440px) {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -99,50 +118,27 @@
     padding-bottom: 27px;
     border-bottom: none;
   }
-
-  @media (min-width: 769px) and (max-width: 1439px) {
-    font-size: 16px;
-    line-height: 24px;
-    width: calc(100% - 287px);
-    border-bottom: none;
-    padding-bottom: 34px;
-  }
-
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  margin: 23px 0 0 0;
-  padding-bottom: 21px;
-  width: 100%;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link-block {
-  @media (min-width: 1440px) {
-    width: 100%;
-    padding-top: 0;
-  }
+  display: flex;
+  align-items: center;
+  padding: 20px 0 0 0;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     width: calc(100% - 211px);
   }
 
-  display: flex;
-  align-items: center;
-  padding: 20px 0 0 0;
+  @media (min-width: 1440px) {
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .programs__images {
-  @media (min-width: 1440px) {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 106px;
-  }
+  display: block;
+  width: 50px;
+  height: 50px;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     position: absolute;
@@ -152,32 +148,35 @@
     height: 211px;
   }
 
-  display: block;
-  width: 50px;
-  height: 50px;
+  @media (min-width: 1440px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .programs__images-block {
-  @media (min-width: 1440px) {
-    width: 134px;
-  }
+  margin: 2px 0 0 -5px;
 
   @media (min-width: 769px) and (max-width: 1439px) {
     width: 254px;
   }
 
-  margin: 2px 0 0 -5px;
+  @media (min-width: 1440px) {
+    width: 134px;
+  }
 }
 
 .programs__images--picture::after {
-  @media (min-width: 1440px) {
-    position: relative;
+  @media (max-width: 768px) {
     content: "";
-    background-image: url("../img/cat-sitting--desktop.svg");
-    width: 100px;
-    height: 106px;
+    background-image: url("../img/cat-sitting--mobile.svg");
+    width: 50px;
+    height: 53px;
     display: block;
-    top: 3px;
+    margin: 0 0 0 2px;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -190,27 +189,24 @@
     left: -20px;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 1440px) {
+    position: relative;
     content: "";
-    background-image: url("../img/cat-sitting--mobile.svg");
-    width: 50px;
-    height: 53px;
+    background-image: url("../img/cat-sitting--desktop.svg");
+    width: 100px;
+    height: 106px;
     display: block;
-    margin: 0 0 0 2px;
+    top: 3px;
   }
 }
 
 .programs__images-block::after {
-  @media (min-width: 1440px) {
-    position: relative;
+  @media (max-width: 768px) {
     content: "";
-    background-image: url("../img/cat-is-standing--desktop.svg");
-    width: 134px;
-    height: 100px;
+    background-image: url("../img/cat-is-standing--mobile.svg");
+    width: 67px;
+    height: 50px;
     display: block;
-    background-repeat: no-repeat;
-    left: -15px;
-    top: 8px;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
@@ -225,12 +221,16 @@
     right: -13px;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 1440px) {
+    position: relative;
     content: "";
-    background-image: url("../img/cat-is-standing--mobile.svg");
-    width: 67px;
-    height: 50px;
+    background-image: url("../img/cat-is-standing--desktop.svg");
+    width: 134px;
+    height: 100px;
     display: block;
+    background-repeat: no-repeat;
+    left: -15px;
+    top: 8px;
   }
 }
 
@@ -261,13 +261,7 @@
 }
 
 .programs__link-title {
-  @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 30px;
-    padding-right: 27px;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -278,6 +272,12 @@
   margin: 0;
   padding-right: 17px;
   width: 100%;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 27px;
+  }
 }
 
 .programs__images-icon--tablet {
@@ -299,8 +299,9 @@
 }
 
 .programs__images-icon--desktop {
+  display: none;
+
   @media (min-width: 1440px) {
     display: block;
   }
-  display: none;
 }

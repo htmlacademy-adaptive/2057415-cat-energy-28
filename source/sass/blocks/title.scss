@@ -1,17 +1,17 @@
 .title-block {
-  @media (min-width: 1440px) {
-    padding: 56px 0 87px 0;
+  @media (max-width: 768px) {
+    padding: 27px 20px 41px 20px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 -20px 0 -20px;
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
     padding: 47px 0 91px 0;
   }
 
-  @media (max-width: 768px) {
-    padding: 27px 20px 41px 20px;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-    margin: 0 -20px 0 -20px;
+  @media (min-width: 1440px) {
+    padding: 56px 0 87px 0;
   }
 }
 
@@ -22,16 +22,16 @@
 }
 
 .title-block__title {
-  @media (min-width: 769px) {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: 769px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
