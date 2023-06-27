@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["popover.scss"],"sourcesContent":[".popover--open {\n  @media (max-width: 768px) {\n    display: block;\n  }\n}\n\n.popover--close {\n  @media (max-width: 768px) {\n    display: none;\n  }\n}\n"],"file":"popover.css"}
