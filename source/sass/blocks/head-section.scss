@@ -13,12 +13,16 @@
   }
 
   @media (min-width: 769px) and (max-width: 1439px) {
-    background-image: url("../img/index-tablet2.png");
+    background-image: url("../img/index-tablet@1x.png");
     background-size: 709px 609px;
     background-position: 30px 248px;
     background-repeat: no-repeat;
-    padding-top: 47px;
+    padding-top: 45px;
     padding-bottom: 506px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-tablet@2x.png");
+    }
 
     &::before {
       display: none;
@@ -56,7 +60,9 @@
     top: -139px;
     right: 0;
     z-index: -1;
-    width: 720px;
+    /*width: 720px;*/
+    width: 50%;
+    background-size: cover;
     height: 701px;
 
     @media (min-resolution: 2dppx) {

@@ -1,5 +1,10 @@
-let toggle = document.querySelector('.toggle');
-let popover = document.querySelector('.popover');
+let toggle = document.querySelector(".toggle");
+let popover = document.querySelector(".popover");
+let header = document.querySelector(".header--nojs");
+
+header.classList.remove("header--nojs");
+popover.classList.remove("popover--nojs");
+
 
 toggle.addEventListener('click', function () {
   if (toggle.classList.contains('header__toggle-burger')) {
@@ -20,3 +25,12 @@ toggle.addEventListener('click', function () {
     popover.classList.remove('popover--open');
   }
 });
+
+/*
+toggle.addEventListener("click", function () {
+  toggle.classList.toggle("header__toggle-burger");
+  toggle.classList.toggle("header__toggle--close");
+
+  toggle.classList.toggle("popover--close");
+  toggle.classList.toggle("popover--open");
+})*/

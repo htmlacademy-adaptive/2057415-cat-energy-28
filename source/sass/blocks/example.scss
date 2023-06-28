@@ -263,6 +263,8 @@
 }
 
 .example__picture--before {
+  position: relative;
+
   @media (max-width: 769px) {
     z-index: 20;
     left: 0;
@@ -311,7 +313,7 @@
 
 .example__picture {
   @media (max-width: 768px) {
-    position: absolute;
+    position: relative;
     top: 0;
     height: 256px;
     width: 50%;
@@ -320,7 +322,7 @@
   }
 
   @media (min-width: 769px) {
-    position: absolute;
+    position: relative;
     top: 0;
     height: 100%;
     background-size: cover;
@@ -343,22 +345,26 @@
   }
 }
 
-.example__picture--before::after {
+.example__button {
   position: absolute;
   content: "";
   width: 4px;
   height: 100%;
   top: 0;
-  right: -3px;
+  right: 50%;
   background-color: #666666;
   z-index: 30;
+  border: none;
+  margin: 0;
+  padding: 0;
+
 
   @media (min-width: 769px) and (max-width: 1439px) {
-    right: 2px;
+    right: 50%;
   }
 
   @media (min-width: 1440px) {
-    right: 0;
+    right: 50%;
     position: absolute;
     content: "";
     width: 4px;
@@ -369,7 +375,7 @@
   }
 }
 
-.example__picture--before::before {
+.example__button::before {
   position: absolute;
   content: "";
   width: 40px;

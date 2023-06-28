@@ -14,7 +14,7 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--nojs">
       <div class="container">
         <div class="header__wrapper header__wrapper--popover">
           <div class="header__logo-wrapper">
@@ -60,10 +60,12 @@
             <h2 class="head-section__title">Функциональное питание для котов</h2>
               <p class="head-section__text">Занялся собой? Займись котом!</p>
               <picture class="head-section__picture">
-                <source media="(min-width: 1317px)" srcset="img/index-desktop@1x.png 1x, img/index-desktop@2x.png 2x">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-desktop@1x.webp 1x, img/index-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-mobile@1x.webp 1x, img/index-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/index-desktop@1x.png 1x, img/index-desktop@2x.png 2x">
                 <img class="head-section__picture-image" src="img/index-mobile@1x.png" srcset="img/index-mobile@2x.png 2x" alt="Пример продукта" width="280" height="270">
               </picture>
-            <a class="head-section__button button" href="#">
+            <a class="head-section__button button" href="form.html">
               Подобрать программу
             </a>
           </div>
@@ -176,6 +178,7 @@
               <div class="example__image-wrapper">
                 <div class="example__picture example__picture--before">
                 </div>
+                <button class="example__button" type="button"></button>
                 <div class="example__picture example__picture--after">
                 </div>
               </div>

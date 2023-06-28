@@ -119,7 +119,8 @@
     font-size: 20px;
     line-height: 30px;
     padding: 11px 20px 10px 20px;
-    margin: 0 0 0 14px;
+    margin: 0 0 0 13px;
+    -moz-appearance: textfield;
 
     &:hover {
       border: 1px solid #cdcdcd;
@@ -129,6 +130,14 @@
       outline: 2px solid #444444;
     }
   }
+}
+
+.form__input--error {
+  outline: 2px solid #ff8282;
+}
+
+.form__inner-input--error {
+  outline: 2px solid #ff8282;
 }
 
 /* stylelint-disable */

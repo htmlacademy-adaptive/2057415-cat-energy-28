@@ -66,15 +66,18 @@
               <div class="form__block form__block--user">
                 <div class="form__user">
                   <label class="form__label" for="name">Имя:*</label>
+                  <!--При ошибке добавить класс .form__input--error-->
                   <input class="form__input" type="text" id="name" name="name" aria-label="Введите имя вашего кота" placeholder="Барсик" required>
                 </div>
                 <div class="form__user">
                   <label class="form__label form__weight-block" for="weight">Вес (кг):*</label>
-                  <input class="form__input" type="number" id="weight" name="weight" aria-label="Введите вес вашего кота" placeholder="7" required>
+                  <!--При ошибке добавить класс .form__input--error-->
+                  <input class="form__input" type="number" id="weight" name="weight" min="1" aria-label="Введите вес вашего кота" placeholder="7" required>
                 </div>
                 <div class="form__user">
                   <label class="form__label form__age-block" for="age">Возраст (лет):</label>
-                  <input class="form__input" type="number" id="age" name="age" aria-label="Введите возраст вашего кота" placeholder="7">
+                  <!--При ошибке добавить класс .form__input--error-->
+                  <input class="form__input" type="number" id="age" name="age" min="0" aria-label="Введите возраст вашего кота" placeholder="7">
                 </div>
               </div>
               <div class="form__block form__block--program">
@@ -102,10 +105,12 @@
                 <div class="form__inner">
                   <div class="form__inner-block form__inner-block--image">
                     <label class="form__inner-label" for="email">E-mail:*</label>
+                    <!--При ошибке добавить класс .form__inner-input--error-->
                     <input class="form__inner-input" type="email" id="email" name="email" aria-label="Введите ваш электронный адрес" placeholder="кuklachev@gmail.com" required>
                   </div>
                   <div class="form__inner-block form__inner-block--icon">
                     <label class="form__inner-label" for="phone">Телефон:*</label>
+                    <!--При ошибке добавить класс .form__inner-input--error-->
                     <input class="form__inner-input" type="tel" id="phone" name="phone" aria-label="Введите ваш номер телефона" placeholder="8 (960) 900-60-90" required>
                   </div>
                 </div>
