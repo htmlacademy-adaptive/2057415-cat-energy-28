@@ -1,7 +1,7 @@
 .instruction {
   padding: 20px 0 29px 0;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 45px 0 0 0;
   }
 
@@ -19,7 +19,7 @@
   color: #000000;
   margin: 0 0 39px 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
@@ -34,10 +34,16 @@
   margin: 0;
   counter-reset: licounter;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: flex-start;
   }
 }
@@ -50,7 +56,7 @@
   position: relative;
   counter-increment: licounter;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -61,7 +67,7 @@
 
   @media (min-width: 1440px) {
     max-width: 246px;
-    margin: 0;
+    margin: 0 79px 0 0;
     padding-bottom: 83px;
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +76,7 @@
 }
 
 .instruction__item::before {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
     top: -39px;
     right: 77px;
@@ -100,8 +106,13 @@
 }
 
 .instruction__item:nth-child(n+3) {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     margin: 0;
+    padding-bottom: 103px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 79px 0 0;
     padding-bottom: 103px;
   }
 }
@@ -116,7 +127,7 @@
   margin: 0;
   width: calc(100% - 81px);
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 16px;
     line-height: 24px;
     width: 250px;
@@ -137,7 +148,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     width: 80px;
     height: 80px;
     margin-bottom: 31px;
@@ -203,7 +214,7 @@
 }
 
 .instruction__item--one::before {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     right: 99px;
   }
 

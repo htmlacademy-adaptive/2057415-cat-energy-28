@@ -1,11 +1,11 @@
 .popover--close {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .popover--open {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }

@@ -1,12 +1,12 @@
 .title-block {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 27px 20px 41px 20px;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     margin: 0 -20px 0 -20px;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 45px 0 91px 0;
   }
 
@@ -16,7 +16,7 @@
 }
 
 .title-block__wrapper {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     border: none;
   }
 }
@@ -30,7 +30,7 @@
   color: #000000;
   margin: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
   }

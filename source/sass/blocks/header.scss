@@ -4,6 +4,7 @@
   @media (min-width: 1440px) {
     padding-top: 53px;
     background-color: transparent;
+    position: relative;
   }
 }
 
@@ -34,7 +35,7 @@
 }
 
 .header__logo {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     width: 174px;
     height: 51px;
   }
@@ -59,7 +60,7 @@
   background-color: #ffffff;
   padding: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -95,7 +96,7 @@
   background-color: #ffffff;
   padding: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -131,13 +132,13 @@
 
 .header__logo--mobile,
 .header__toggle {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
 
 .header__logo--tablet {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     display: block;
   }
 }
@@ -154,13 +155,13 @@
   margin-right: 7px;
   padding-top: 3px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
 
 .header__popover {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     position: absolute;
     top: 64px;
     left: 0;
@@ -171,21 +172,26 @@
     padding: 0 20px 0 20px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: block;
     width: 62.45%;
+  }
+
+  @media (min-width: 1440px) {
+    display: block;
+    width: 49.45%;
   }
 }
 
 .header__popover-list {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -200,12 +206,13 @@
     width: 100%;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     padding: 0 0 18px 0;
   }
 }
 
 .header__popover-item:not(:last-child) {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -215,13 +222,13 @@
 }
 
 .header__popover-item:first-child {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     border-top: 1px solid #e6e6e6;
   }
 }
 
 .header__popover-item {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 22px 21px 22px 20px;
     margin: 0 -20px 0 -20px;
     text-align: center;
@@ -259,7 +266,7 @@
 }
 
 .header__popover-link {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -270,7 +277,7 @@
     text-transform: uppercase;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -304,12 +311,12 @@
 
 
 .header__wrapper {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     position: relative;
     padding: 10px 0 0 0;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -318,4 +325,26 @@
 
 .header--nojs .header__toggle-burger {
   visibility: hidden;
+}
+
+.header--background::after {
+  @media (min-width: 1440px) {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop@1x.png");
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    background-size: cover;
+    min-height: 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop@2x.png");
+      z-index: -1;
+      background-size: 1049px 694px;
+      background-position: calc(100% + 330px) 0;
+      background-repeat: no-repeat;
+    }
+  }
 }

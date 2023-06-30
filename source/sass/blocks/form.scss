@@ -1,7 +1,7 @@
 .form__main {
   padding-bottom: 32px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 0 35px 72px 40px;
   }
 
@@ -32,7 +32,7 @@
     padding: 0 0 23px 0;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 0 0 72px 0;
   }
 }
@@ -43,7 +43,7 @@
   border-top: 1px solid #d9d9d9;
   margin: 0 -20px 0 -20px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     border: 1px solid #e7e7e7;
     padding: 25px 27px 22px 27px;
     margin: 0 3px 0 0;
@@ -65,7 +65,7 @@
 .form__user:not(:last-child) {
   margin-bottom: 14px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     margin-bottom: 19px;
   }
 }
@@ -83,7 +83,7 @@
   text-transform: uppercase;
   color: #444444;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
     flex-shrink: 0;
@@ -108,7 +108,7 @@
   border: 1px solid #e7e7e7;
   margin: 0 0 0 13px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 20px;
     line-height: 30px;
     padding: 11px 20px 10px 20px;
@@ -120,7 +120,10 @@
     line-height: 30px;
     padding: 11px 20px 10px 20px;
     margin: 0 0 0 13px;
+    /* stylelint-disable */
     -moz-appearance: textfield;
+    appearance: textfield;
+    /* stylelint-enable */
 
     &:hover {
       border: 1px solid #cdcdcd;
@@ -143,11 +146,13 @@
 /* stylelint-disable */
 .form__input {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: textfield;
   margin: 0;
 }
 /* stylelint-enable */
@@ -156,7 +161,7 @@ input::-webkit-inner-spin-button {
   padding: 26px 0 35px 0;
   position: relative;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 75px 0 76px 0;
   }
 
@@ -175,7 +180,7 @@ input::-webkit-inner-spin-button {
   background-color: #68b738;
   z-index: -1;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     top: 97px;
     right: -65px;
     width: 150%;
@@ -200,7 +205,7 @@ input::-webkit-inner-spin-button {
   background-color: #ffffff;
   padding-right: 14px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 36px;
     line-height: 36px;
     min-width: 517px;
@@ -227,11 +232,11 @@ input::-webkit-inner-spin-button {
 }
 
 .form__inner-block:not(:last-child) {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-bottom: 14px;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     margin-bottom: 20px;
   }
 }
@@ -247,7 +252,7 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
   flex-shrink: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -266,7 +271,7 @@ input::-webkit-inner-spin-button {
   margin: 0 0 0 10px;
   border: 1px solid #cdcdcd;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 15px 10px 19px;
@@ -304,7 +309,7 @@ input::-webkit-inner-spin-button {
   right: 15px;
   background-repeat: no-repeat;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     top: 16px;
     right: 20px;
   }
@@ -320,7 +325,7 @@ input::-webkit-inner-spin-button {
   right: 12px;
   background-repeat: no-repeat;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     top: 18px;
     right: 17px;
   }
@@ -335,7 +340,7 @@ input::-webkit-inner-spin-button {
   margin: 0 0 39px 0;
   position: relative;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     margin: 0 0 76px 0;
   }
 
@@ -354,7 +359,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   z-index: -1;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     top: 23px;
     right: -65px;
     width: 150%;
@@ -379,7 +384,7 @@ input::-webkit-inner-spin-button {
   width: 121px;
   padding: 0 22px 0 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
     min-width: 182px;
@@ -403,7 +408,7 @@ input::-webkit-inner-spin-button {
   padding: 9px 12px 9px 15px;
   box-sizing: border-box;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 20px;
     line-height: 36px;
     min-height: 174px;
@@ -432,7 +437,7 @@ input::-webkit-inner-spin-button {
   margin: 8px 0 0 0;
   text-align: center;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     margin: 0;
@@ -459,7 +464,7 @@ input::-webkit-inner-spin-button {
   padding: 10px 44px 10px 44px;
   margin-bottom: 19px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     width: 44.6%;
     margin: 0 68px 0 0;
     font-size: 20px;
@@ -495,7 +500,7 @@ input::-webkit-inner-spin-button {
   color: #000000;
   padding-left: 6px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-family: "Lato", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -515,11 +520,11 @@ input::-webkit-inner-spin-button {
 }
 
 .form__block--add {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding-bottom: 26px;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding-top: 39px;
     padding-bottom: 22px;
   }
@@ -531,7 +536,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form__block--user {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 0 0 71px 0;
   }
 
@@ -542,7 +547,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form__block--contacts {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 0 0 65px 0;
   }
 
@@ -556,11 +561,13 @@ input::-webkit-inner-spin-button {
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
 .form__block--textarea {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 0 0 20px 0;
   }
 

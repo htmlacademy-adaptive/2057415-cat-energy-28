@@ -3,7 +3,7 @@
   margin-top: 20px;
   background-color: #f2f2f2;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 77px 28px 57px 53px;
   }
 
@@ -15,7 +15,7 @@
 }
 
 .programs__block--next {
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     margin-top: 30px;
   }
 
@@ -28,6 +28,8 @@
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -36,7 +38,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     position: relative;
   }
 
@@ -57,7 +59,7 @@
   margin-bottom: 8px;
   width: calc(100% - 71px);
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 36px;
     line-height: 36px;
     width: 100%;
@@ -77,7 +79,7 @@
   margin: 0;
   padding: 7px 0 0 0;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 0;
   }
 
@@ -94,11 +96,11 @@
   line-height: 18px;
   color: #444444;
   margin: 23px 0 0 0;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 16px;
     line-height: 24px;
     width: calc(100% - 287px);
@@ -125,7 +127,7 @@
   align-items: center;
   padding: 19px 0 0 0;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     width: calc(100% - 211px);
   }
 
@@ -140,7 +142,7 @@
   width: 50px;
   height: 50px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
     top: 5px;
     right: 14px;
@@ -160,7 +162,7 @@
 .programs__images-block {
   margin: 2px 0 0 -5px;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     width: 254px;
   }
 
@@ -170,7 +172,7 @@
 }
 
 .programs__images--picture::after {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     content: "";
     background-image: url("../img/cat-sitting--mobile.svg");
     width: 50px;
@@ -179,7 +181,7 @@
     margin: 0 0 0 2px;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
     content: "";
     background-image: url("../img/cat-sitting--tablet.svg");
@@ -201,7 +203,7 @@
 }
 
 .programs__images-block::after {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     content: "";
     background-image: url("../img/cat-is-standing--mobile.svg");
     width: 67px;
@@ -209,7 +211,7 @@
     display: block;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
     content: "";
     background-image: url("../img/cat-is-standing--tablet.svg");
@@ -273,7 +275,7 @@
   padding-right: 17px;
   width: 100%;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
     padding-right: 27px;
@@ -285,7 +287,7 @@
     display: none;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: block;
   }
 
@@ -293,7 +295,7 @@
 }
 
 .programs__images-icon {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }

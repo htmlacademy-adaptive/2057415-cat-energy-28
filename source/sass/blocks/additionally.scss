@@ -15,7 +15,7 @@
   background-color: #68b738;
   z-index: -1;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     width: 150%;
     right: -65px;
     top: -14px;
@@ -38,7 +38,14 @@
   background-color: #ffffff;
   padding: 0 23px 0 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 41px 0 40px;
+    margin-left: -40px;
+  }
+
+  @media (min-width: 1440px) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 41px 0 40px;
@@ -51,10 +58,16 @@
   padding-left: 0;
   margin: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 79px;
   }
 }
 
@@ -68,8 +81,9 @@
   color: #444444;
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -78,7 +92,7 @@
 .additionally__list-block {
   margin-top: 34px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     margin-top: 57px;
   }
 }
@@ -86,22 +100,18 @@
 .additionally__item {
   display: flex;
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     width: 45.8%;
     margin-bottom: 32px;
-  }
-
-  @media (min-width: 1440px) {
-    width: 20.2%;
   }
 }
 
 .additionally__item:not(:last-child) {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-bottom: 11px;
   }
 
-  @media (min-width: 769px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     margin-bottom: 30px;
   }
 }
@@ -123,7 +133,7 @@
   background-size: 18px 14px;
   background-repeat: no-repeat;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     width: 39px;
     height: 39px;
     margin-right: 20px;
@@ -164,4 +174,18 @@
   line-height: 26px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 41px 0 40px;
+    margin-left: -40px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 41px 0 40px;
+    margin-left: -40px;
+  }
 }
