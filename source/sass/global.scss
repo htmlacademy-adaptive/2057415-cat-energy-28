@@ -12,11 +12,7 @@
 }
 
 body {
-  @media (min-width: 780px) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -24,6 +20,13 @@ body {
   min-width: 320px;
   margin: 0;
   background: #ffffff;
+  overflow-x: hidden;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+  }
 }
 
 html {

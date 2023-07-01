@@ -11,12 +11,7 @@
 }
 
 .field-programs__label {
-  @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -25,14 +20,23 @@
   color: #222222;
   display: inline-flex;
   align-items: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-programs__item:not(:last-child) {
-  @media (min-width: 1317px) {
-    margin-bottom: 6px;
+  margin-bottom: 9px;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    margin-bottom: 7px;
   }
 
-  margin-bottom: 13px;
+  @media (min-width: 1440px) {
+    margin-bottom: 8px;
+  }
 }
 
 .field-programs__radio {
@@ -42,23 +46,23 @@
 }
 
 .field-programs__label::before {
-  @media (min-width: 769px) {
-    width: 40px;
-    height: 40px;
-    margin-right: 19px;
-    background-size: 18px 18px;
-  }
-
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 13px;
   background-position: center center;
   background-size: 13px 13px;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 38px;
+    height: 38px;
+    margin-right: 21px;
+    background-size: 19px 19px;
+  }
 }
 
 .field-programs__radio:checked + label::before {
@@ -76,4 +80,8 @@
 
 .field-programs__radio:not(:disabled) + label:hover::before {
   border: 1px solid #bababa;
+}
+
+.field-programs__radio:focus:not(:disabled) + .field-programs__label {
+  outline: 2px solid #444444;
 }

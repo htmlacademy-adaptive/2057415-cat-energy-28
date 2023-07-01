@@ -1,100 +1,145 @@
 .cooperation__block {
-  @media (min-width: 769px) {
-    padding: 56px 40px 56px 40px;
-  }
-
-  @media (min-width: 1317px) {
-    padding: 56px 0 56px 0;
-  }
-
   display: flex;
   justify-content: space-between;
   padding: 26px 0 26px 0;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    padding: 60px 40px 61px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 0 57px 0;
+  }
 }
 
 .cooperation--block {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     position: relative;
   }
 }
 
 .cooperation__wrapper {
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     position: absolute;
-    top: 75px;
-    left: 45px;
+    top: 95px;
+    left: 110px;
     width: 565px;
     background-color: #ffffff;
   }
 }
 
 .cooperation__title {
-  @media (min-width: 769px) {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  margin: 0;
-  width: 40%;
+  margin: 0 17px 0 0;
+  width: 45%;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 30%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 40%;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #111111;
+  }
 }
 
 .cooperation__addres-block {
-  @media (min-width: 1317px) {
-    width: 175px;
+  width: 50%;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    width: 30%;
+    margin-top: -4px;
   }
 
-  width: 50%;
+  @media (min-width: 1440px) {
+    width: 157px;
+    margin-top: -4px;
+  }
 }
 
 .cooperation__addres {
-  @media (min-width: 769px) {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     margin-bottom: 20px;
   }
 
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     text-align: left;
+    font-family: "Lato", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    margin-bottom: 19px;
   }
+}
 
-  font-family: "Lato", sans-serif;
+.cooperation__addres-point {
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
   margin: 0;
-}
 
-.cooperation__addres-point {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
 
-  @media (min-width: 1317px) {
+  @media (min-width: 1440px) {
     text-align: left;
+    font-family: "Lato", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
   }
-
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-  margin: 0;
 }
 
 .cooperation__map {
   width: 100%;
   height: 362px;
   display: block;
+  border: none;
+
+  @media (min-width: 1440px) {
+    height: 400px;
+    width: 100%;
+    display: block;
+    border: none;
+  }
+}
+
+.cooperation__map-block {
+  @media (min-width: 1440px) {
+    height: 400px;
+  }
 }

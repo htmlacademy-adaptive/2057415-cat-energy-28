@@ -1,11 +1,17 @@
+.popover--close {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .popover--open {
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
 
-.popover--close {
-  @media (max-width: 769px) {
-    display: none;
-  }
+.popover--nojs {
+  display: block;
+  position: relative;
+  top: 0;
 }
