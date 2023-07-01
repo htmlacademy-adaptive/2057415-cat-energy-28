@@ -45,7 +45,7 @@
 
   @media (min-width: 768px) and (max-width: 1439px) {
     border: 1px solid #e7e7e7;
-    padding: 25px 27px 22px 27px;
+    padding: 25px 27px 20px 27px;
     margin: 0 3px 0 0;
   }
 
@@ -83,7 +83,7 @@
   text-transform: uppercase;
   color: #444444;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 20px;
     line-height: 30px;
     flex-shrink: 0;
@@ -569,6 +569,10 @@ input::-webkit-inner-spin-button {
 .form__block--textarea {
   @media (max-width: 767px) {
     padding: 0 0 20px 0;
+  }
+
+  @media (max-width: 768px) and (max-width: 1439px) {
+    padding: 0 0 21px 0;
   }
 
   @media (min-width: 1440px) {

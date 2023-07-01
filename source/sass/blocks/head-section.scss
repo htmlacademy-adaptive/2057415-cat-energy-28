@@ -33,7 +33,7 @@
     position: relative;
     background-image: none;
     padding-top: 10px;
-    padding-bottom: 58px;
+    padding-bottom: 115px;
 
     &::before {
       display: none;
@@ -113,7 +113,7 @@
   @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-template-rows: 1fr min-content 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
     align-items: flex-start;
     align-content: flex-start;
     min-height: 480px;
