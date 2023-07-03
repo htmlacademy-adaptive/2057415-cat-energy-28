@@ -47,10 +47,10 @@
   @media (min-width: 1440px) {
     position: absolute;
     content: "";
-    height: 2px;
-    z-index: 1;
+    height: 4px;
+    z-index: -1;
     background-color: #ffffff;
-    width: 40px;
+    width: 140px;
     left: 70px;
     top: 23px;
   }
