@@ -84,11 +84,9 @@
                     Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
                     Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                   </p>
-                  <div class="programs__link-block">
-                    <a class="programs__item-link programs__item-link--icon" href="#">
-                      <h3 class="programs__link-title">Каталог Slim</h3>
-                    </a>
-                  </div>
+                  <a class="programs__item-link programs__item-link--icon" href="#">
+                    <h3 class="programs__link-title">Каталог Slim</h3>
+                  </a>
                 </div>
               </article>
               <article class="programs__list-block programs__block programs__block--next">
@@ -100,11 +98,9 @@
                     Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
                     поможет вашему коту нарастить необходимые мышцы!
                   </p>
-                  <div class="programs__link-block">
-                    <a class="programs__item-link programs__item-link--icon" href="#">
-                      <h3 class="programs__link-title">Каталог PRO</h3>
-                    </a>
-                  </div>
+                  <a class="programs__item-link programs__item-link--icon" href="#">
+                    <h3 class="programs__link-title">Каталог PRO</h3>
+                  </a>
                 </div>
               </article>
             </div>
@@ -115,29 +111,21 @@
           <h2 class="instruction__title">Как это работает</h2>
           <ul class="instruction__list">
             <li class="instruction__item instruction__item--one">
-              <div class="instruction__image-block instruction__image-block--icon">
-              </div>
               <p class="instruction__item-text instruction__text-space">
                 Функциональное питание содержит только полезные питательные вещества
               </p>
             </li>
             <li class="instruction__item instruction__item--two">
-              <div class="instruction__image-block instruction__image-block--water">
-              </div>
               <p class="instruction__item-text instruction__text-space">
                   Выпускается в виде порошка, который нужно лишь залить кипятком и готово
               </p>
             </li>
             <li class="instruction__item instruction__item--three">
-              <div class="instruction__image-block instruction__image-block--fork">
-              </div>
               <p class="instruction__item-text instruction__text-space">
                   Замените один-два приема обычной еды на наше функциональное питание
               </p>
             </li>
             <li class="instruction__item instruction__item--four">
-              <div class="instruction__image-block instruction__image-block--watch">
-              </div>
               <p class="instruction__item-text instruction__text-space">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
               </p>
@@ -176,16 +164,32 @@
             </div>
             <div class="example__sample-block">
               <div class="example__image-wrapper">
-                <div class="example__picture example__picture--before">
-                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-before@1x--desktop.webp 1x, img/cat-before@2x--desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before@1x--tablet.webp 1x, img/cat-before@2x--tablet.webp 2x">
+                  <source type="image/webp" srcset="img/cat-before@1x--mobile.webp 1x, img/cat-before@2x--mobile.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/cat-before@1x--desktop.png 1x, img/cat-before@2x--desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-before@1x--tablet.png 1x, img/cat-before@2x--tablet.png 2x">
+                  <img class="example__image-before example__image" src="img/cat-before@1x--mobile.png" srcset="img/cat-before@2x--mobile.png" width="138" height="256" alt="Ваш кот до похудения">
+                </picture>
+                <!--<div class="example__picture example__picture--before">
+                </div>-->
                 <button class="example__button" type="button">
                   <span class="visually-hidden">Слайдер вашего кота "Было-стало"</span>
                   <svg class="example__button-icon" width="40" height="40">
                     <use xlink:href="img/sprite.svg#icon-thumb"></use>
                   </svg>
                 </button>
-                <div class="example__picture example__picture--after">
-                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-after@1x--desktop.webp 1x, img/cat-after@2x--desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after@1x--tablet.webp 1x, img/cat-after@2x--tablet.webp 2x">
+                  <source type="image/webp" srcset="img/cat-after@1x--mobile.webp 1x, img/cat-after@2x--mobile.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/cat-after@1x--desktop.png 1x, img/cat-after@2x--desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-after@1x--tablet.png 1x, img/cat-after@2x--tablet.png 2x">
+                  <img class="example__image-after example__image" src="img/cat-after@1x--mobile.png" srcset="img/cat-after@2x--mobile.png" width="138" height="256" alt="Ваш кот после похудения">
+                </picture>
+                <!--<div class="example__picture example__picture--after">
+                </div>-->
               </div>
             </div>
           </div>
@@ -250,14 +254,12 @@
               </li>
             </ul>
           </div>
-          <div class="footer__block footer__block--copyright">
-            <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <b class="footer__copyright">HTML Academy</b>
-              <svg class="footer__copyright-image" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon-copyright"></use>
-              </svg>
-            </a>
-          </div>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="footer__copyright">HTML Academy</b>
+            <svg class="footer__copyright-image" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
