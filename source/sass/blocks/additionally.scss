@@ -82,6 +82,7 @@
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
+  max-width: 100%;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -99,6 +100,7 @@
 
 .additionally__item {
   display: flex;
+  max-width: 100%;
 
   @media (min-width: 768px) and (max-width: 1439px) {
     width: 45.8%;
@@ -132,6 +134,7 @@
   background-position: center center;
   background-size: 18px 14px;
   background-repeat: no-repeat;
+  flex-shrink: 0;
 
   @media (min-width: 768px) {
     width: 39px;

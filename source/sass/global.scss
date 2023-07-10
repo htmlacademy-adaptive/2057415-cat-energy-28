@@ -29,6 +29,11 @@ body {
   }
 }
 
+.page-main,
+.page-main__form {
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }

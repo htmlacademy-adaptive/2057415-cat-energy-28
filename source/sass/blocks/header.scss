@@ -208,16 +208,13 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 0 18px 0;
+    gap: 35px;
   }
 }
 
 .header__popover-item:not(:last-child) {
   @media (max-width: 767px) {
     border-bottom: 1px solid #e6e6e6;
-  }
-
-  @media (min-width: 1440px) {
-    margin-right: 35px;
   }
 }
 

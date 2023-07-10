@@ -43,19 +43,6 @@
   }
 }
 
-.add-offers__wrapper::after {
-  @media (min-width: 1440px) {
-    position: absolute;
-    content: "";
-    height: 4px;
-    z-index: -1;
-    background-color: #ffffff;
-    width: 140px;
-    left: 70px;
-    top: 23px;
-  }
-}
-
 .add-offers__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -80,8 +67,9 @@
   @media (min-width: 1440px) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 79px 0;
+    margin: 0 0 79px -34px;
     padding-right: 34px;
+    padding-left: 34px;
   }
 }
 
@@ -224,12 +212,12 @@
     padding: 58px 0 43px 0;
     margin-top: 35px;
     width: 100%;
-    background-size: 100% 290px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--mobile@1x.png");
+    background-image: url("../img/catalog/cat-in-bag@1x--mobile.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--mobile@2x.png");
+      background-image: url("../img/catalog/cat-in-bag@2x--mobile.png");
     }
   }
 
@@ -238,12 +226,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 56px 125px 69px 80px;
-    background-size: 100% 200px;
+    background-size: 100% calc(100% - 6px);
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--tablet@1x.png");
+    background-image: url("../img/catalog/cat-in-bag@1x-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--tablet@2x.png");
+      background-image: url("../img/catalog/cat-in-bag@2x-tablet.png");
     }
   }
 
@@ -255,10 +243,10 @@
     padding: 59px 43px 42px 40px;
     background-repeat: no-repeat;
     background-size: 245px 100%;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--desktop@1x.png");
+    background-image: url("../img/catalog/cat-in-bag@1x--desktop.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-in-bag--desktop@2x.png");
+      background-image: url("../img/catalog/cat-in-bag@2x--desktop.png");
     }
   }
 }
