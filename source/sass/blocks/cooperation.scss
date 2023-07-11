@@ -11,12 +11,12 @@
     padding: 60px 0 60px 0;
   }
 }
-
+/*
 .cooperation--block {
   @media (min-width: 1440px) {
     position: relative;
   }
-}
+}*/
 
 .cooperation__wrapper {
   @media (min-width: 1440px) {
@@ -175,5 +175,14 @@
     height: 400px;
     width: 100%;
     display: flex;
+  }
+}
+
+.cooperation__container {
+  @media (min-width: 1440px) {
+    padding: 0 110px 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
   }
 }

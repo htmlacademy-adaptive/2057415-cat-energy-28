@@ -337,12 +337,12 @@
     width: 50%;
     background-size: cover;
     min-height: 694px;
+    background-color: #68b738;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background@2x--desktop.png");
       z-index: -1;
       background-size: 1049px 694px;
-      background-position: calc(100% + 330px) 0;
       background-repeat: no-repeat;
     }
   }
