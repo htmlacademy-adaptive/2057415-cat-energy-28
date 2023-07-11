@@ -1,9 +1,9 @@
 .add-offers {
   position: relative;
-  padding: 25px 0 34px 0;
+  padding: 25px 0 35px 0;
 
   @media (min-width: 768px) and (max-width: 1439px) {
-    padding: 0 0 70px 0;
+    padding: 0 0 75px 0;
     margin: 0;
   }
 
@@ -212,7 +212,7 @@
     padding: 58px 0 43px 0;
     margin-top: 35px;
     width: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/cat-in-bag@1x--mobile.png");
 
@@ -225,8 +225,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 125px 69px 80px;
-    background-size: 100% calc(100% - 6px);
+    padding: 56px 125px 64px 80px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/catalog/cat-in-bag@1x-tablet.png");
 
@@ -242,7 +242,7 @@
     align-items: center;
     padding: 59px 43px 42px 40px;
     background-repeat: no-repeat;
-    background-size: 245px 100%;
+    background-size: cover;
     background-image: url("../img/catalog/cat-in-bag@1x--desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -269,7 +269,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin: 46px 0 0 0;
+    margin: 48px 0 0 0;
   }
 }
 

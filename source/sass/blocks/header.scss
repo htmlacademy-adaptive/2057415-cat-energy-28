@@ -195,9 +195,11 @@
     list-style-type: none;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 36px;
     width: 100%;
     padding: 0 0 10px 0;
+    justify-content: flex-end;
   }
 
   @media (min-width: 1440px) {
