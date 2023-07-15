@@ -8,7 +8,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding: 38px 52px 58px 52px;
+    padding: 38px 52px 59px 52px;
     width: 38.2%;
     height: auto;
   }
@@ -21,6 +21,7 @@
 
   @media (min-width: 1440px) {
     margin-top: 19px;
+    padding-top: 45px;
   }
 }
 
@@ -47,6 +48,43 @@
   }
 }
 
+.programs__item-block--image::before {
+  @media (max-width: 767px) {
+    position: relative;
+    content: "";
+    background-image: url("../img/cat-is-standing--mobile.svg");
+    width: 67px;
+    height: 50px;
+    display: block;
+    top: 2px;
+    left: -6px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cat-is-standing--tablet.svg");
+    width: 268px;
+    height: 200px;
+    display: block;
+    background-repeat: no-repeat;
+    top: 13px;
+    right: 0;
+  }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    content: "";
+    background-image: url("../img/cat-is-standing--desktop.svg");
+    width: 134px;
+    height: 100px;
+    display: block;
+    background-repeat: no-repeat;
+    left: -18px;
+    top: 4px;
+  }
+}
+
 .programs__item-title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -62,7 +100,7 @@
   @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 36px;
     line-height: 36px;
-    width: 100%;
+    width: calc(100% - 250px);
     margin: 0;
   }
 
@@ -84,7 +122,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding: 7px 0 0 0;
+    padding: 2px 0 0 0;
   }
 }
 
@@ -122,18 +160,9 @@
   }
 }
 
-.programs__link-block {
-  display: flex;
-  align-items: center;
-  padding: 19px 0 0 0;
-
-  @media (min-width: 768px) and (max-width: 1439px) {
-    width: calc(100% - 211px);
-  }
-
-  @media (min-width: 1440px) {
-    width: 100%;
-    padding-top: 0;
+.programs__item-text--next {
+  @media (max-width: 767px) {
+    margin: 25px 0 0 0;
   }
 }
 
@@ -171,7 +200,7 @@
   }
 }
 
-.programs__images--picture::after {
+.programs__item-block--picture::before {
   @media (max-width: 767px) {
     content: "";
     background-image: url("../img/cat-sitting--mobile.svg");
@@ -188,7 +217,8 @@
     width: 200px;
     height: 211px;
     display: block;
-    left: -20px;
+    right: 32px;
+    top: 4px;
   }
 
   @media (min-width: 1440px) {
@@ -202,48 +232,25 @@
   }
 }
 
-.programs__images-block::after {
-  @media (max-width: 767px) {
-    content: "";
-    background-image: url("../img/cat-is-standing--mobile.svg");
-    width: 67px;
-    height: 50px;
-    display: block;
-  }
-
-  @media (min-width: 768px) and (max-width: 1439px) {
-    position: absolute;
-    content: "";
-    background-image: url("../img/cat-is-standing--tablet.svg");
-    width: 268px;
-    height: 200px;
-    display: block;
-    background-repeat: no-repeat;
-    top: 5px;
-    right: -13px;
-  }
-
-  @media (min-width: 1440px) {
-    position: relative;
-    content: "";
-    background-image: url("../img/cat-is-standing--desktop.svg");
-    width: 134px;
-    height: 100px;
-    display: block;
-    background-repeat: no-repeat;
-    left: -15px;
-    top: 8px;
-  }
-}
-
 .programs__item-link {
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 19px 0 0 0;
+  width: 39%;
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: 768px) and (max-width: 1439px) {
+    width: calc(100% - 211px);
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    padding-top: 0;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -273,12 +280,16 @@
   color: #000000;
   margin: 0;
   padding-right: 17px;
-  width: 100%;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 27px;
+    padding-right: 25px;
+    width: 26%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 23%;
   }
 }
 

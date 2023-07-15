@@ -157,7 +157,7 @@
 .example__value-text {
   position: absolute;
   top: 47px;
-  left: 13px;
+  left: 14px;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -268,56 +268,7 @@
   }
 }
 
-.example__picture--before {
-  position: relative;
-
-  @media (max-width: 769px) {
-    z-index: 20;
-    left: 0;
-    background-image: url("../img/cat-fat--mobile@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-fat--mobile@2x.png");
-    }
-  }
-
-  @media (min-width: 768px) {
-    z-index: 20;
-    left: 0;
-    background-image: url("../img/cat-fat--desktop@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-fat--desktop@2x.png");
-    }
-  }
-}
-
-.example__picture--after {
-  @media (max-width: 767px) {
-    background-image: url("../img/cat-scraggy--mobile@1x.png");
-    z-index: 10;
-    right: 0;
-    background-position-x: -141px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-scraggy--mobile@2x.png");
-    }
-  }
-
-  @media (min-width: 768px) {
-    z-index: 10;
-    right: 0;
-    background-repeat: no-repeat;
-    background-position-x: -283px;
-    background-image: url("../img/cat-scraggy--desktop@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-scraggy--desktop@2x.png");
-    }
-  }
-}
-
-.example__picture {
+.example__image {
   @media (max-width: 767px) {
     position: relative;
     top: 0;
@@ -333,6 +284,40 @@
     height: 100%;
     background-size: cover;
     width: 50%;
+  }
+}
+
+.example__image-before {
+  position: relative;
+
+  @media (max-width: 769px) {
+    z-index: 20;
+    left: 0;
+    width: 138px;
+    height: 256px;
+  }
+
+  @media (min-width: 768px) {
+    z-index: 20;
+    left: 0;
+    width: 278px;
+    height: 512px;
+  }
+}
+
+.example__image-after {
+  @media (max-width: 767px) {
+    z-index: 10;
+    right: 0;
+    width: 138px;
+    height: 256px;
+  }
+
+  @media (min-width: 768px) {
+    z-index: 10;
+    right: 0;
+    width: 278px;
+    height: 512px;
   }
 }
 
@@ -357,7 +342,7 @@
   width: 4px;
   height: 100%;
   top: 0;
-  right: 48.2%;
+  right: 48.6%;
   background-color: #666666;
   z-index: 30;
   border: none;
@@ -367,7 +352,7 @@
 
 
   @media (min-width: 768px) and (max-width: 1439px) {
-    right: 49.1%;
+    right: 49.2%;
     transform: translate(-50%, 0);
   }
 

@@ -2,13 +2,12 @@
   @media (max-width: 767px) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile@1x.png");
     background-repeat: no-repeat;
-    background-size: 100% 302px;
+    background-size: 100% calc(100% - 178px);
     background-position: center top;
     position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile@2x.png");
-      background-size: 100% 302px;
     }
   }
 

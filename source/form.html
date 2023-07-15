@@ -52,7 +52,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="page-main">
     <section class="form-title">
       <div class="container">
         <h1 class="form-title__main-title">Подбор программы</h1>
@@ -153,20 +153,30 @@
         </div>
       </section>
     <section class="cooperation cooperation--block">
-      <div class="cooperation__wrapper">
-        <div class="container container--bottom">
-          <div class="cooperation__block">
-            <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-            <div class="cooperation__addres-block">
-              <address class="cooperation__addres">
-              ул. Большая Конюшенная, д. 19/8
-              </address>
-              <p class="cooperation__addres-point">Санкт-Петербург</p>
+      <div class="cooperation__container">
+        <div class="cooperation__wrapper">
+          <div class="container container--bottom">
+            <div class="cooperation__block">
+              <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+              <div class="cooperation__addres-block">
+                <address class="cooperation__addres">
+                ул. Большая Конюшенная, д. 19/8
+                </address>
+                <p class="cooperation__addres-point">Санкт-Петербург</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="cooperation__map-block">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-img@1x--desktop.webp 1x, img/map-img@2x--desktop.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-img@1x--tablet.webp 1x, img/map-img@2x--tablet.webp 2x">
+          <source type="image/webp" srcset="img/map-img@1x--mobile.webp 1x, img/map-img@2x--mobile.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-img@1x--desktop.png 1x, img/map-img@2x--desktop.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-img@1x--tablet.png 1x, img/map-img@2x--tablet.png 2x">
+          <img class="cooperation__map-image" src="img/map-img@1x--mobile.png" srcset="img/map-img@2x--mobile.png" width="320" height="362" alt="Cat Energy PRO 1000 г">
+        </picture>
         <iframe class="cooperation__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec5a9a1af780e8e077483f2a39d16fb3689e5504a49866284c2acf128bd9de0d&amp;source=constructor" width="320" height="362"></iframe>
       </div>
     </section>
@@ -174,50 +184,44 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <div class="footer__block footer__block--logo">
-          <a class="footer__logo-link" href="index.html">
-            <span class="visually-hidden">Кэт энерджи</span>
-            <svg class="footer__logo-title" width="101" height="19">
-              <use xlink:href="img/sprite.svg#icon-footer--logo"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="footer__block footer__block--social">
-          <ul class="footer__social-list social-list">
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в VK</span>
-                <svg class="footer__link-icon" width="29" height="22">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в ютубе</span>
-                <svg class="footer__link-icon" width="29" height="22">
-                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в телеграме</span>
-                <svg class="footer__link-icon" width="29" height="22">
-                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__block footer__block--copyright">
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <b class="footer__copyright">HTML Academy</b>
-            <svg class="footer__copyright-image" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-copyright"></use>
-            </svg>
+        <a class="footer__logo-link" href="index.html">
+          <span class="visually-hidden">Кэт энерджи</span>
+          <svg class="footer__logo-title" width="101" height="19">
+            <use xlink:href="img/sprite.svg#icon-footer--logo"></use>
+          </svg>
+        </a>
+        <ul class="footer__social-list social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в VK</span>
+              <svg class="footer__link-icon" width="29" height="22">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
-        </div>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в ютубе</span>
+              <svg class="footer__link-icon" width="29" height="22">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в телеграме</span>
+              <svg class="footer__link-icon" width="29" height="22">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="footer__copyright">HTML Academy</b>
+          <svg class="footer__copyright-image" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-copyright"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
